@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-touch-fullscreen" content="yes">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<!-- 移动端手机号码/邮箱识别 -->
+		<meta content="telephone=no,email=no" name="format-detection">
+		<!-- 微信调试 取消缓存 -->
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="expires" content="0">
+		<title>九牧11.11全球卫浴直播节</title>
+		<meta name="description" content="九牧卫浴1990年创立。作为中国高端卫浴领导者，九牧长期专注于厨卫及配套产品的研发和生产，是一家以淋浴房、浴室柜、智能马桶、洁具、花洒、龙头、马桶、浴室柜、角阀、水槽、晾衣架、厨卫挂件为主体业务的大型厨卫企业，多次获得“中国卫浴十大品牌”“中国高端卫浴领导者”等称号" />
+		<meta name="keywords" content="九牧、九牧商城、九牧卫浴、九牧官网、九牧水龙头、九牧马桶、九牧花洒、九牧浴室柜、九牧角阀、九牧智能马桶">
+		<link rel="stylesheet" type="text/css" href="https://m.ejomoo.com/css/main/global.css" />
+		<link rel="stylesheet" type="text/css" href="https://m.ejomoo.com/css/main/index.css">
+		<link rel="stylesheet" type="text/css" href="http://m.ejomoo.com/css/main/amazeui.swiper.min.css">
+		<style>
+			a{
+			display: block;
+		}
+		.coupontit{
+			display: flex;
+		}
+		.coupontit .coupontititem{
+			flex: 1;
+		}
+		.coupontit img{
+			width: 100%;
+		}
+		
+		.product_mis_list1{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.product_mis_list img{
+			width: 50%;
+		}
+		.product_mis_list1 .dingin{
+			width: 50%;
+			position: relative;
+		}
+		.product_mis_list1 .dingin .zz_s{
+			position: absolute;
+			background: url(http://img.jomoo.com.cn/dev1/0/000/680/0000680527.fid) no-repeat;
+			background-size: 100% 100%;
+			width: 100%;
+			height: 100%;
+			top: 0px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 0.7rem;
+			color: #FFFFFF;
+			z-index: 999;
+			display: none;
+		}
+		.product_mis_list1 .dingin .zz_s.is-show {
+			display: block;
+		}
+		.product_mis_listbtm{
+			/*display: flex;*/
+			/*justify-content: center;*/
+		}
+		.product_mis_listbtm img{
+			width: 33.3%;
+		}
+		.product_mis_fiveGold{
+			/*display: flex;*/
+			/*justify-content: center;*/
+			/*flex-wrap: wrap;*/
+		}
+		.product_mis_fiveGold img{
+			width: 33.3%;
+		}
+		.pageDisabled{
+			pointer-events: none;
+		}
+		.pct30 {
+			float: left;
+			width: 30%;
+			margin: calc(6rem / 46.875) 1.4%;
+
+		}
+		.pct46 {
+			float: left;
+			width: 46%;
+			margin: calc(6rem / 46.875) 1.5%;
+		}
+		.pct92 {
+			float: left;
+			width: 92%;
+			margin: calc(6rem / 46.875) 0;
+		}
+		.pct94 {
+			float: left;
+			width: 94%;
+			margin: calc(6rem / 46.875) 0;
+		}
+
+		.contentbox{
+			background-color: #780095;
+		}
+		.carousel-pane{
+			height: calc(1222rem / 46.875);
+		}
+		.nav-wrapper {
+			position: relative;
+			width: 100%;
+			height: calc(150rem / 46.875);
+			/*margin-top: calc(-150rem / 46.875);*/
+			/*background-color: rgba(255, 255, 255, .8);*/
+			z-index: 100;
+			position: relative;
+		}
+		.nav-pane {
+			display: flex;
+			align-items: center;
+			width: 100%;
+			height: calc(150rem / 46.875);
+			padding: calc(10rem / 46.875) calc(10rem / 46.875) calc(10rem / 46.875) 0;
+			box-sizing: border-box;
+			overflow: hidden;
+			position: absolute;
+			width: 100%;
+			left: 0rpx;
+			top: 0rpx;
+		}
+		.nav-pane .grand_item{
+			overflow: hidden;
+			z-index: 99;
+		}
+		.nav-pane .nav-content {
+			width: calc(100% - 37rem / 46.875);
+			overflow: hidden;
+		}
+		.nav-wrapper .img {
+			position: absolute;
+			width: 100%;
+			left: 0rpx;
+			top: 0rpx;
+		}
+		.nav-pane .nav-btn {
+			float: left;
+			width: calc(37rem / 46.875);
+			height: calc(136rem / 46.875);
+		}
+		.nav-pane ul {
+			display: flex;
+			flex-wrap: nowrap;
+			height: calc(132rem / 46.875);
+			overflow: hidden;
+		}
+		.nav-pane li {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: calc(109rem / 46.875);
+			height: calc(132rem / 46.875);
+			margin: 0 calc(5rem / 46.875);
+			background: url("http://img.jomoo.com.cn/dev1/0/000/591/0000591574.fid") no-repeat;
+			background-size: 100%;
+			flex-shrink: 0;
+		}
+		.nav-pane li span{
+			display: block;
+			line-height: 1.1;
+			text-align: center;
+			font-size: calc(32rem / 46.875);
+			font-weight: bold;
+			color: #AE132A;
+		}
+		.fixedTop {
+			position: fixed;
+			top: 0;
+			left: 0;
+			z-index: 100;
+		}
+		.product-wrapper{
+			position: relative;
+		}
+		.product-pane{
+			/*position: absolute;*/
+			/*top: 0;*/
+			/*left: 0;*/
+		}
+		.product-pane .product-title{
+			width: 53.46%;
+			margin: 0 auto;
+			padding: calc(20rem / 46.875) 0 calc(10rem / 46.875);
+		}
+		.product-pane > ul{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.product-coupon{
+			background-color: #b91212;
+		}
+		.product-coupon .pct30{
+			margin: calc(10rem / 46.875) 0.5%;
+		}
+		.product-coupon .coupon-tip{
+			margin-top: calc(-10rem / 46.875);
+			text-align: center;
+			font-size: calc(16rem / 46.875);
+			color: #fff;
+		}
+
+
+		.video-wrapper{
+			position: relative;
+		}
+		.video-pane{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: calc(100% - 18rem/48.765);
+			height: calc(347rem/48.765);
+			margin: calc(6rem/48.765) calc(9rem/48.765) 0;
+			background-color: #000;
+			border-radius: calc(10rem/48.765);
+		}
+		.video-pane video{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: calc(339rem/48.765);
+			border-radius: calc(10rem/48.765);
+		}
+		.video-pane .video-pic{
+			position: absolute;
+			left: 5%;
+			bottom: -49%;
+			width: calc(242rem/48.765);
+			height: calc(216rem/48.765);
+		}
+
+		.tip-wrap{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			/*margin-top: calc(-630rem/48.765);*/
+		}
+
+		.btn-wrap{
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			height: calc(110rem/48.765);
+		}
+		.btn-wrap a{
+			width: calc(210rem/48.765);
+			height: calc(72rem/48.765);
+			margin: 0 calc(30rem/48.765);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-family: PingFangSC, sans-serif;
+			font-size: calc(32rem/48.765);
+			font-weight: bold;
+			color: #820000;
+			background-image: linear-gradient(0deg,
+			#ffbb70 0%,
+			#fee7c1 100%),
+			linear-gradient(0deg,
+					#000000 0%,
+					#ffffff 100%);
+			box-shadow: 0px 5px 5px 0px
+			rgba(181, 0, 2, 0.75);
+			border-radius: calc(36rem/48.765);
+		}
+		/*直播浮窗*/
+		.live-float{
+			position: fixed;
+			right: 0;
+			bottom: 20%;
+			width: 30%;
+			z-index: 103;
+		}
+		/*弹出框*/
+		.jm-mask{
+
+			background: rgba(0,0,0,0.4);
+			position: fixed;
+			top:0;
+			left:0;
+			bottom: 0;
+			right:0;
+			z-index: 105;
+		}
+		.popupbox-wrapper{
+			width: 100%;
+			position: fixed;
+			top:40%;
+			left:50%;
+			transform:translateX(-50%) translateY(-50%);
+			z-index: 106;
+		}
+		.popupbox-wrapper .popupbox-vcode{
+			width: 80%;
+			margin: 0 auto;
+			padding: calc(80rem / 46.875) 0;
+			text-align: center;
+			background:rgba(255,255,255,1);
+			border-radius: calc(16rem / 46.875);
+		}
+		.popupbox-wrapper .popupbox-vcode img{
+			width: calc(330rem / 46.875);
+			height: calc(330rem / 46.875);
+		}
+		.popupbox-wrapper .popupbox-vcode p{
+			margin-top: calc(40rem / 46.875);
+			padding: 0 calc(80rem / 46.875);
+			font-size: calc(32rem / 46.875);
+			color: #333;
+		}
+		.popupbox-wrapper .vcode-close{
+			display: flex;
+			justify-content: center;
+			padding-top: calc(40rem / 46.875);
+		}
+		.popupbox-wrapper .vcode-close span{
+			display: block;
+			width: calc(75rem / 46.875);
+			height: calc(75rem / 46.875);
+			background: url('http://img.jomoo.com.cn/dev1/0/000/602/0000602162.fid') no-repeat center top/cover;
+		}
+	</style>
+	</head>
+
+	<body>
+		<div id="app" :class="{pageDisabled: !pageFlag}">
+			<!--九牧头部-->
+			<!--	<div class="holder-m_header">-->
+			<!--		<header class="m_header clearfix">-->
+			<!--			&lt;!&ndash;<div class="header_address fl"><span></span><s></s></div>&ndash;&gt;-->
+			<!--			<h1><img src="http://img.jomoo.com.cn/dev1/0/000/307/0000307316.fid" id="logo" class="top_logo"></h1>-->
+			<!--			<div class="m_search" id="m_searchbox_index" @click="searchEvent">-->
+			<!--				<img src="https://m.ejomoo.com/img/search.png" alt="">-->
+			<!--				智能马桶-->
+			<!--			</div>-->
+			<!--		</header>-->
+			<!--	</div>-->
+			<div class="contentbox">
+				<component-carousel></component-carousel>
+				<div><img :src="newyImg" alt=""></div>
+				<div class="coupontit" :id="coupontit.id">
+					<div class="coupontititem" v-for="(item,index) in coupontit.list">
+						<img :src="item.imgurl" @click="goDetial(item.link,item.productUuid,item.productIndex,item.activityUuid)" alt="">
+					</div>
+				</div>
+				<!-- 超值秒杀 -->
+				<div class="product_mis" :id="czms.id">
+					<img :src="czms.title">
+					<div class="product_mis_list1">
+						<div class="dingin" v-for="(item,index) in czms.list">
+							<div class="zz_s" :class="waiterAlary?'is-show':''" v-if="item.isOver"></div>
+							<img :src="item.src" @click="item.isOver==false && goDetial(item.link,item.productUuid)">
+						</div>
+					</div>
+				</div>
+				<!-- 入群享特价 -->
+				<div class="joinproduct">
+					<img :src="join.title">
+					<img :src="join.qrcode">
+				</div>
+
+				<component-nav :navlist="nav"></component-nav>
+				<!-- 抢先预订 -->
+				<div class="" :id="qxyd.id">
+					<img :src="preemption.title">
+					<img :src="preemption.bottom">
+					<div>
+						<img :src="item.src" @click="goDetial(item.link,item.productUuid)" v-for="(item,index) in preemption.list">
+					</div>
+				</div>
+				<!-- 尖货 -->
+				<div class="" :id="bkzq.id">
+					<img :src="detonate.title">
+					<img :src="detonate.bottom">
+					<div>
+						<img :src="item.src" @click="goDetial(item.link,item.productUuid)" v-for="(item,index) in detonate.list">
+					</div>
+					<div class="product_mis_list">
+						<img :src="item.src" @click="goDetial(item.link,item.productUuid)" v-for="(item,index) in detonate.last">
+					</div>
+				</div>
+				<!-- 省薪套餐 -->
+				<div :id="sxtc.id">
+					<img :src="setmeal.title">
+					<img :src="setmeal.item.url" @click="goDetial(setmeal.item.link,setmeal.item.productUuid)">
+					<div class="product_mis_list">
+						<img :src="item.src" @click="goDetial(item.link,item.productUuid)" v-for="(item,index) in setmeal.list">
+					</div>
+				</div>
+				<!-- 花洒 -->
+				<component-tiserve :navlist="tiserve"></component-tiserve>
+				<!-- 马桶 -->
+				<component-tiserve :navlist="closestool"></component-tiserve>
+				<!-- 浴室柜 -->
+				<div :id="showerroom.id">
+					<img :src="showerroom.title">
+					<div class="product_mis_list">
+						<img :src="item.imgurl" @click="goDetial(item.link,item.productUuid)" v-for="(item,index) in showerroom.list">
+					</div>
+					<div class="product_mis_listbtm">
+						<img :src="item.imgurl" @click="goDetial(item.link,item.productUuid)" v-for="(item,index) in showerroom.listBtm">
+					</div>
+				</div>
+				<!-- 厨房 -->
+				<component-tiserve :navlist="kitchen"></component-tiserve>
+				<!-- 晾衣架 -->
+				<component-tiserve :navlist="hanger"></component-tiserve>
+				<!-- 五金 -->
+				<div :id="fiveGold.id">
+					<img :src="fiveGold.title">
+					<div class="product_mis_fiveGold">
+						<img :src="item.imgurl" @click="goDetial(item.link,item.productUuid)" v-for="(item,index) in fiveGold.list">
+					</div>
+				</div>
+			</div>
+			<!-- 回到顶部 -->
+			<div v-html="btn">
+
+			</div>
+			<!--底部导航-->
+			<nav class="nav">
+				<div class="footer_nav">
+					<ol>
+						<li class="nav_li1" id="home" @click="homeClickEvent">
+							<a href="javascript:;">
+								<s></s>
+								<p>首页</p>
+							</a>
+						</li>
+						<li class="nav_li2" id="classify" @click="classifyClickEvent">
+							<a href="javascript:;">
+								<s></s>
+								<p>分类</p>
+							</a>
+						</li>
+						<li class="nav_li5" id="wholesaleBtn" style="display: none;">
+							<a href="javascript:;">
+								<s></s>
+								<p></p>
+							</a>
+						</li>
+						<li class="nav_li3" id="shopcart" @click="shopcartClickEvent">
+							<a href="javascript:;">
+								<s></s>
+								<p>购物车</p>
+								<span id="productnum" class="y_fixnumber y_badge"></span>
+							</a>
+						</li>
+						<li class="nav_li4" id="me" @click="meClickEvent">
+							<a href="#">
+								<s></s>
+								<p>我的</p>
+							</a>
+						</li>
+					</ol>
+				</div>
+			</nav>
+			<!--直播浮窗-->
+			<div class="live-float" style="display: none;">
+				<img src="http://img.jomoo.com.cn/dev1/0/000/625/0000625286.fid" alt="">
+			</div>
+			<!--直播浮窗 end-->
+			<!--直播二维码弹出框-->
+			<modal-live :live="isvcodeLive" @change="live => isvcodeLive = live"></modal-live>
+			<!--直播二维码弹出框 end-->
+		</div>
+	</body>
+	<script type="text/javascript" src="https://m.ejomoo.com/js/main/vue2.5.16.js"></script>
+	<script type="text/javascript" src="https://m.ejomoo.com/js/main/vue-lazyload1.2.3.js"></script>
+	<script type="text/javascript" src="https://m.ejomoo.com/js/main/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="https://m.ejomoo.com/js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+	<script type="text/javascript" src="https://m.ejomoo.com/js/main/init.js"></script>
+	<script type="text/javascript" src="https://m.ejomoo.com/js/main/des3.js"></script>
+	<script type="text/javascript" src="https://m.ejomoo.com/js/mui.js"></script>
+	<script type="text/javascript" src="http://m.ejomoo.com/js/main/amazeui.swiper.js"></script>
+	<script type="text/javascript">
+		Vue.use(VueLazyload, {
+			preLoad: 1.3,
+			loading: 'https://img.jomoo.com.cn/dev1/0/000/145/0000145059.fid',
+			attempt: 1
+		});
+		const ComponentCarousel = {
+			data() {
+				return {
+					carouselList: [{
+						src: 'http://img.jomoo.com.cn/dev1/0/000/677/0000677231.fid'
+					}, ]
+				}
+			},
+			template: ' <div class="swiper-container" >\n' +
+				'      <div class="swiper-wrapper">\n' +
+				'        <div v-for="(item,index) in carouselList" class="swiper-slide">\n' +
+				'          <img :src="item.src" alt="">\n' +
+				'        </div>\n' +
+				'      </div>\n' +
+				'    </div>',
+		};
+		const ComponentTiserve = {
+			props: {
+				navlist: Array
+			},
+			template: ' <div :id="navlist.id">\n' +
+				'          <img :src="navlist.title" alt="">\n' +
+				'        <div class="product_mis_list">\n' +
+				'          <img :src="item.imgurl" v-on:click="goDetial(item.link,item.productUuid,item.productIndex)" v-for="(item,index) in navlist.list">\n' +
+				'        </div>\n' +
+				'    </div>',
+			methods: {
+				goDetial(url, productUuid, productIndex, activityUuid) {
+					if (this.$root.isMini) { // 如果当前处于小程序中，调用跳转到小程序页面方法
+						if (productIndex == 1) {
+							wx.miniProgram.navigateTo({
+								url: '/pages/shop/details?productUuid=' + productUuid + '&productIndex=' + productIndex + ''
+							})
+						} else if (productIndex == 10) {
+							wx.miniProgram.navigateTo({
+								url: '/pages/shop/detailsCoupon?productUuid=' + productUuid + '&productIndex=' + productIndex + ''
+							})
+						} else if (productIndex == 20) {
+							wx.miniProgram.navigateTo({
+								url: '/pages/activity/getcoupon?logUuid=' + productUuid + ''
+							})
+						} else if (productIndex == 2) {
+							wx.miniProgram.navigateTo({
+								url: '/pages/shop/detailsSeckill?skuNo=' + productUuid + '&activityUuid=' + activityUuid + ''
+							})
+						} else if (productIndex == 4) {
+							wx.miniProgram.navigateTo({
+								url: '/pages/pt/details?pt=' + activityUuid + ''
+							})
+						} else {
+							window.location.href = url;
+						}
+					} else {
+						window.location.href = url;
+					}
+				},
+			},
+		};
+		const ComponentNav = {
+			data() {
+				return {
+					navBtn: "http://img.jomoo.com.cn/dev1/0/000/677/0000677218.fid",
+					grand: "http://img.jomoo.com.cn/dev1/0/000/677/0000677144.fid",
+				}
+			},
+			props: {
+				navlist: Array
+			},
+			template: '<div class="nav-wrapper">\n' +
+
+				'    <div class="nav-pane">\n' +
+				'      <img :src="grand" alt="" class="img" />\n' +
+				'       <div class="grand_item">\n' +
+				'      <img :src="navBtn" alt="" class="nav-btn" />\n' +
+				'      <div class="nav-content">\n' +
+				'        <ul class="jm-slide">\n' +
+				'          <li v-for="(item,index) in navlist" :data-id="item.target" @click="skip(item.target)">\n' +
+				'          <img :src="item.url" alt="">\n' +
+				'          </li>\n' +
+				'        </ul>\n' +
+				'      </div>\n' +
+				'      </div>\n' +
+				'    </div>\n' +
+				'  </div>',
+			methods: {
+				scroll() {
+					const headerHeight = document.querySelector('.m_header') && document.querySelector('.m_header').offsetHeight || 0;
+					const navWrapper = document.querySelector('.nav-wrapper');
+					const navPane = document.querySelector('.nav-pane');
+					return this.throttle(() => {
+						if (navWrapper.getBoundingClientRect().top <= headerHeight) {
+							navPane.classList.add('fixedTop');
+						} else {
+							navPane.classList.remove('fixedTop');
+						}
+					}, 16, {
+						leading: false,
+						trailing: false
+					});
+				},
+				throttle(func, wait, options = {}) {
+					const {
+						leading = true, trailing = true
+					} = options;
+					let timeout, context, args, result;
+					let previous = 0;
+					const later = function() {
+						previous = !leading ? 0 : (Date.now() || new Date().getTime());
+						timeout = null;
+						result = func.apply(context, args);
+						if (!timeout) context = args = null;
+					}
+					const throttled = function() {
+						const now = Date.now() || new Date().getTime();
+						if (!previous && !leading) previous = now;
+						// remaining 为距离下次执行 func 的时间
+						// remaining > wart，表示系统时间被调整过
+						const remaining = wait - (now - previous);
+						context = this;
+						args = arguments;
+						if (remaining <= 0 || remaining > wait) {
+							if (timeout) {
+								clearTimeout(timeout);
+								timeout = null;
+							}
+							// 重置previous
+							previous = now;
+							// 执行函数
+							result = func.apply(context, args);
+							if (!timeout) context = args = null;
+						} else if (!timeout && trailing) {
+							timeout = setTimeout(later, remaining);
+						}
+						return result;
+					}
+					throttled.cancel = function() {
+						clearTimeout(timeout);
+						previous = 0;
+						timeout = context = args = null;
+					}
+					return throttled;
+				},
+				getOffset(dom) {
+					let offset = {
+						left: 0,
+						top: 0,
+					};
+					console.log(dom)
+					while (dom !== document.body) {
+						offset.top += dom.offsetTop;
+						offset.left += dom.offsetLeft;
+						dom = dom.offsetParent;
+					}
+					return offset;
+				},
+				skip(id) {
+					const headerHeight = document.querySelector('.m_header') && document.querySelector('.m_header').offsetHeight || 0;
+					const navHeight = document.querySelector('.nav-wrapper').offsetHeight;
+					let dom = $("#" + id).get(0)
+					let scrollHeight = this.getOffset(dom).top - headerHeight - navHeight;
+					$('html,body').animate({
+						scrollTop: scrollHeight + 'px'
+					}, 500);
+				}
+			},
+			mounted() {
+				const scrollFn = this.scroll();
+				$(document).on('scroll', scrollFn);
+
+				const navContent = document.querySelector('.nav-content ul');
+				navContent.addEventListener('touchstart', e => {
+					const pos_start = e.touches[0].pageX;
+					const start_left = parseFloat(getComputedStyle(navContent).marginLeft);
+
+					const content_width = navContent.scrollWidth;
+					const container_width = document.querySelector('.nav-content').offsetWidth;
+
+					const touchmove = ev => {
+						const pos_move = ev.touches[0].pageX;
+						const diff = Math.min(0, Math.max(pos_move - pos_start + start_left, container_width - content_width));
+						navContent.style.marginLeft = diff + 'px';
+					};
+					const touchend = ev => {
+						document.removeEventListener('touchmove', touchmove);
+						document.removeEventListener('touchend', touchend);
+					};
+
+					document.addEventListener('touchmove', touchmove);
+					document.addEventListener('touchend', touchend);
+				})
+			}
+		};
+		const ComponentSection = {
+			props: {
+				product: String
+			},
+			template: '<div :id="product.id" class="product-wrapper">\n' +
+				// '    <img :src="product.bg" alt="" class="product-bg">\n' +
+				'    <div class="product-pane">\n' +
+				'      <h3 class="product-title"><img :src="product.title" alt=""></h3>\n' +
+				'      <ul class="clearfix">\n' +
+				'        <li v-for="(item,index) in product.list" :id="item.id" :class="item.class">\n' +
+				'          <a v-on:click="goDetial(item.link,item.productUuid,item.productIndex,item.activityUuid)">\n' +
+				'            <img :src="item.src" alt="">\n' +
+				'          </a>\n' +
+				'        </li>\n' +
+				'      </ul>\n' +
+				'    </div>\n' +
+				'  </div>',
+			methods: {
+				goDetial(url, productUuid, productIndex, activityUuid) {
+					if (this.$root.isMini) { // 如果当前处于小程序中，调用跳转到小程序页面方法
+						if (productIndex == 1) {
+							wx.miniProgram.navigateTo({
+								url: '/pages/shop/details?productUuid=' + productUuid + '&productIndex=' + productIndex + ''
+							})
+						} else if (productIndex == 10) {
+							wx.miniProgram.navigateTo({
+								url: '/pages/shop/detailsCoupon?productUuid=' + productUuid + '&productIndex=' + productIndex + ''
+							})
+						} else if (productIndex == 20) {
+							wx.miniProgram.navigateTo({
+								url: '/pages/activity/getcoupon?logUuid=' + productUuid + ''
+							})
+						} else if (productIndex == 2) {
+							wx.miniProgram.navigateTo({
+								url: '/pages/shop/detailsSeckill?skuNo=' + productUuid + '&activityUuid=' + activityUuid + ''
+							})
+						} else if (productIndex == 4) {
+							wx.miniProgram.navigateTo({
+								url: '/pages/pt/details?pt=' + activityUuid + ''
+							})
+						} else {
+							window.location.href = url;
+						}
+					} else {
+						window.location.href = url;
+					}
+				},
+			},
+		};
+		const ModalLive = {
+			props: {
+				live: Boolean
+			},
+			methods: {
+				close() {
+					this.$emit("change", false);
+				}
+			},
+			template: '<div>\n' +
+				'  <div class="jm-mask" @click="close" v-if="live"></div>\n' +
+				'   <div class="popupbox-wrapper" v-if="live">\n' +
+				'    <div class="popupbox-vcode">\n' +
+				'      <img src="http://img.jomoo.com.cn/dev1/0/000/669/0000669843.fid" alt=""/>\n' +
+				'      <p>长按二维码，进入直播间</p>\n' +
+				'     </div>\n' +
+				'    <div class="vcode-close" @click="close"><span></span></div>\n' +
+				'  </div>\n' +
+				'</div>'
+		}
+		let vue = new Vue({
+			el: "#app",
+			data: {
+				isMini: false,
+				pageFlag: false,
+				isvcodeLive: false,
+				waiterAlary: false,
+				nav: [{
+						target: "cztc"
+					},
+					{
+						target: "znmt"
+					},
+					{
+						target: "ysg"
+					},
+					{
+						target: "dzysg"
+					},
+					{
+						target: "tc"
+					},
+					{
+						target: "lyhs"
+					},
+					{
+						target: "lyfyg"
+					},
+					{
+						target: "wj"
+					},
+					{
+						target: "hjdq"
+					},
+					{
+						target: "lyjjcdd"
+					},
+					{
+						target: "qwdz"
+					},
+					{
+						target: "szsm"
+					},
+				],
+				newyImg: 'http://img.jomoo.com.cn/dev1/0/000/677/0000677413.fid',
+				coupontit: {
+					id: "cztc",
+					list: [{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677418.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details-coupon.html?productUuid=31bd1107ca824aafb150be6056290d6d&productIndex=10",
+							"productUuid": "500-50",
+							"productIndex": "2",
+							"activityUuid": "31bd1107ca824aafb150be6056290d6d"
+						},
+						{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677419.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details-coupon.html?productUuid=b44fa6ac913f4d01a2a1b74b6fa152af&productIndex=10",
+							"productUuid": "500-50",
+							"productIndex": "2",
+							"activityUuid": "b44fa6ac913f4d01a2a1b74b6fa152af"
+						},
+						{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677420.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details-coupon.html?productUuid=d85a036252d84aa4b1336968cd80a5d6&productIndex=10",
+							"productUuid": "5000-500",
+							"productIndex": "2",
+							"activityUuid": "d85a036252d84aa4b1336968cd80a5d6"
+						},
+					]
+				},
+				czms: {
+					id: 'znmt',
+					bg: '',
+					title: 'http://img.jomoo.com.cn/dev1/0/000/679/0000679555.fid',
+					list: [{
+							src: "http://img.jomoo.com.cn/dev1/0/000/677/0000677433.fid",
+							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details-seckill.html?skuNo=2223-505/1B-Z&activityUuid=39c49de20b3b49c98fef52a3752ed55d&productIndex=2",
+							productUuid: "",
+							productIndex: "1",
+							isOver: true
+						},
+						{
+							src: "http://img.jomoo.com.cn/dev1/0/000/679/0000679780.fid",
+							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details-seckill.html?skuNo=9210-1C1-1&activityUuid=8428211036394354bd941bc1432327bb&productIndex=2",
+							productUuid: "",
+							productIndex: "1",
+							isOver: true
+						},
+						{
+							src: "http://img.jomoo.com.cn/dev1/0/000/679/0000679192.fid",
+							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details-seckill.html?skuNo=74078-156/1C-1&activityUuid=a6398294f4604021a97ada4811fcbfe8&productIndex=2",
+							productUuid: "",
+							productIndex: "1",
+							isOver: false
+						},
+						{
+							src: "http://img.jomoo.com.cn/dev1/0/000/679/0000679193.fid",
+							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details-seckill.html?skuNo=S177013-2B01-1&activityUuid=a6398294f4604021a97ada4811fcbfe8&productIndex=2",
+							productUuid: "",
+							productIndex: "1",
+							isOver: false
+						},
+					]
+				},
+				qxyd: {
+					id: "ysg"
+				},
+				bkzq: {
+					id: "dzysg"
+				},
+				sxtc: {
+					id: "tc"
+				},
+				join: {
+					title: 'http://img.jomoo.com.cn/dev1/0/000/677/0000677156.fid',
+					qrcode: 'http://img.jomoo.com.cn/dev1/0/000/677/0000677155.fid',
+				},
+				nav: [{
+						url: "http://img.jomoo.com.cn/dev1/0/000/677/0000677126.fid",
+						target: "cztc"
+					},
+					{
+						url: "http://img.jomoo.com.cn/dev1/0/000/677/0000677127.fid",
+						target: "znmt"
+					},
+					{
+						url: "http://img.jomoo.com.cn/dev1/0/000/677/0000677129.fid",
+						target: "ysg"
+					},
+					{
+						url: "http://img.jomoo.com.cn/dev1/0/000/677/0000677131.fid",
+						target: "dzysg"
+					},
+					{
+						url: "http://img.jomoo.com.cn/dev1/0/000/677/0000677132.fid",
+						target: "tc"
+					},
+					{
+						url: "http://img.jomoo.com.cn/dev1/0/000/677/0000677133.fid",
+						target: "lyhs"
+					},
+					{
+						url: "http://img.jomoo.com.cn/dev1/0/000/677/0000677134.fid",
+						target: "lyfyg"
+					},
+					{
+						url: "http://img.jomoo.com.cn/dev1/0/000/677/0000677135.fid",
+						target: "wj"
+					},
+					{
+						url: "http://img.jomoo.com.cn/dev1/0/000/677/0000677136.fid",
+						target: "hjdq"
+					},
+					{
+						url: "http://img.jomoo.com.cn/dev1/0/000/677/0000677137.fid",
+						target: "lyjjcdd"
+					},
+					{
+						url: "http://img.jomoo.com.cn/dev1/0/000/677/0000677138.fid",
+						target: "qwdz"
+					},
+				],
+				preemption: {
+					title: 'http://img.jomoo.com.cn/dev1/0/000/677/0000677154.fid',
+					bottom: 'http://img.jomoo.com.cn/dev1/0/000/677/0000677151.fid',
+					list: [{
+							src: "http://img.jomoo.com.cn/dev1/0/000/677/0000677193.fid",
+							link: 'http://m.ejomoo.com/h5/templet/detail/b2b-details-coupon.html?productUuid=eab6216070dd48ba8d594e5f710c0ca6&productIndex=10',
+							productUuid: "",
+							productIndex: "1"
+						},
+						{
+							src: "http://img.jomoo.com.cn/dev1/0/000/677/0000677625.fid",
+							link: 'http://m.ejomoo.com/h5/templet/detail/b2b-details-coupon.html?productUuid=32ccbef8a63741e9b8d860cc0a3c421a&productIndex=10',
+							productUuid: "",
+							productIndex: "1"
+						},
+						{
+							src: "http://img.jomoo.com.cn/dev1/0/000/677/0000677699.fid",
+							link: 'http://m.ejomoo.com/h5/templet/detail/b2b-details-coupon.html?productUuid=a7cd7ebf459c4b81ad02cef4c153c4b3&productIndex=10',
+							productUuid: "",
+							productIndex: "1"
+						}
+					]
+				},
+				detonate: {
+					title: 'http://img.jomoo.com.cn/dev1/0/000/677/0000677161.fid',
+					bottom: 'http://img.jomoo.com.cn/dev1/0/000/677/0000677195.fid',
+					list: [{
+							src: "http://img.jomoo.com.cn/dev1/0/000/677/0000677200.fid",
+							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=8c3360bf79d74e83b722d968ac22ac56&productIndex=1",
+							productUuid: "8c3360bf79d74e83b722d968ac22ac56",
+							productIndex: "1"
+						},
+						{
+							src: "http://img.jomoo.com.cn/dev1/0/000/677/0000677194.fid",
+							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=8c8971d139f14af8a2183766028e19ac&productIndex=1",
+							productUuid: "8c8971d139f14af8a2183766028e19ac",
+							productIndex: "1"
+						},
+						{
+							src: "http://img.jomoo.com.cn/dev1/0/000/679/0000679784.fid",
+							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=76bc17eaa2774cd9b1e0a91b557bb4f8&productIndex=1",
+							productUuid: "76bc17eaa2774cd9b1e0a91b557bb4f8",
+							productIndex: "1"
+						},
+					],
+					last: [{
+							src: "http://img.jomoo.com.cn/dev1/0/000/679/0000679785.fid",
+							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=41d02cab7fba48faad48f00085370eb3&productIndex=1",
+							productUuid: "41d02cab7fba48faad48f00085370eb3",
+							productIndex: "1"
+						},
+						{
+							src: "http://img.jomoo.com.cn/dev1/0/000/677/0000677197.fid",
+							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=da9f2f508ed64783ac1774041bec9fc9&productIndex=1",
+							productUuid: "da9f2f508ed64783ac1774041bec9fc9",
+							productIndex: "1"
+						},
+						{
+							src: "http://img.jomoo.com.cn/dev1/0/000/677/0000677189.fid",
+							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=5dd3a088d8bf4fcf8ed20dd0270c861b&productIndex=1",
+							productUuid: "5dd3a088d8bf4fcf8ed20dd0270c861b",
+							productIndex: "1"
+						},
+						{
+							src: "http://img.jomoo.com.cn/dev1/0/000/677/0000677190.fid",
+							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=027cbc0456ee4b3c8b6eb738f5277973&productIndex=1",
+							productUuid: "027cbc0456ee4b3c8b6eb738f5277973",
+							productIndex: "1"
+						},
+					]
+				},
+				setmeal: {
+					title: "http://img.jomoo.com.cn/dev1/0/000/677/0000677165.fid",
+					item: {
+						url: "http://img.jomoo.com.cn/dev1/0/000/677/0000677211.fid",
+						link: "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=6daf73ac8fa14298b7ae5ee9c72b074d&productIndex=1",
+						productUuid: "6daf73ac8fa14298b7ae5ee9c72b074d",
+						productIndex: "1"
+					},
+					list: [{
+							src: "http://img.jomoo.com.cn/dev1/0/000/677/0000677162.fid",
+							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=c199aebd1ae94842a8b9807f75557ed9&productIndex=1",
+							productUuid: "c199aebd1ae94842a8b9807f75557ed9",
+							productIndex: "1"
+						},
+						{
+							src: "http://img.jomoo.com.cn/dev1/0/000/677/0000677163.fid",
+							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=d92c043cedf544b9a0dccb4f291edcf3&productIndex=1",
+							productUuid: "d92c043cedf544b9a0dccb4f291edcf3",
+							productIndex: "1"
+						},
+					]
+				},
+				tiserve: {
+					id: "lyhs",
+					title: "http://img.jomoo.com.cn/dev1/0/000/677/0000677152.fid",
+					list: [{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677158.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=683d5dd307084bf3be651782dc2a3314&productIndex=1",
+							"productUuid": "683d5dd307084bf3be651782dc2a3314",
+							"productIndex": "1"
+						},
+						{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/679/0000679786.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=1332bf3bc9eb4abcb079d5faee8fac4a&productIndex=1",
+							"productUuid": "1332bf3bc9eb4abcb079d5faee8fac4a",
+							"productIndex": "1"
+						},
+						{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/679/0000679787.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=6e8a008a6c1342f9bed6ed6e64b50390&productIndex=1",
+							"productUuid": "6e8a008a6c1342f9bed6ed6e64b50390",
+							"productIndex": "1"
+						},
+						{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/679/0000679788.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=2db844a3c6b942b192e165ac3adc8827&productIndex=1",
+							"productUuid": "2db844a3c6b942b192e165ac3adc8827",
+							"productIndex": "1"
+						}
+					],
+				},
+				closestool: {
+					id: "lyfyg",
+					title: "http://img.jomoo.com.cn/dev1/0/000/677/0000677184.fid",
+					list: [{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677182.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=33ccd0b68fa04a8fbd4f8773da51b628&productIndex=1",
+							"productUuid": "33ccd0b68fa04a8fbd4f8773da51b628",
+							"productIndex": "1"
+						},
+						{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/679/0000679556.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=d151f8173d114e5db829ee70d94aeeae&productIndex=1",
+							"productUuid": "d151f8173d114e5db829ee70d94aeeae",
+							"productIndex": "1"
+						},
+						{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/679/0000679789.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=c084a9c91c074c3abbd7baf7e4e12410&productIndex=1",
+							"productUuid": "c084a9c91c074c3abbd7baf7e4e12410",
+							"productIndex": "1"
+						},
+						{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677183.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=5a3ce2681e8c445c8c6dabebb73ec658&productIndex=1",
+							"productUuid": "5a3ce2681e8c445c8c6dabebb73ec658",
+							"productIndex": "1"
+						}
+					],
+				},
+				showerroom: {
+					id: "wj",
+					title: "http://img.jomoo.com.cn/dev1/0/000/677/0000677206.fid",
+					list: [{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677209.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=7d2131456654436ba16128a3bf49da8c&productIndex=1",
+							"productUuid": "7d2131456654436ba16128a3bf49da8c",
+							"productIndex": "1"
+						},
+						{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677208.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=8edef9abd89e40fb9acc565d1fa42e0b&productIndex=1",
+							"productUuid": "8edef9abd89e40fb9acc565d1fa42e0b",
+							"productIndex": "1"
+						}
+					],
+					listBtm: [{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677167.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=d12d39f84e49451ca73f72651d55c6f6&productIndex=1",
+							"productUuid": "d12d39f84e49451ca73f72651d55c6f6",
+							"productIndex": "1"
+						},
+						{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677168.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=d6a25cb8ccf541cab679e22b8cc7c0c6&productIndex=1",
+							"productUuid": "d6a25cb8ccf541cab679e22b8cc7c0c6",
+							"productIndex": "1"
+						},
+						{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/679/0000679790.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=d55f2cec6cd24ce293a32fdeec3d4e67&productIndex=1",
+							"productUuid": "d55f2cec6cd24ce293a32fdeec3d4e67",
+							"productIndex": "1"
+						},
+					]
+				},
+				kitchen: {
+					id: "hjdq",
+					title: "http://img.jomoo.com.cn/dev1/0/000/677/0000677146.fid",
+					list: [{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/679/0000679791.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=8bf9c88dc9784bb6b127c466831b52ee&productIndex=1",
+							"productUuid": "8bf9c88dc9784bb6b127c466831b52ee",
+							"productIndex": "1"
+						},
+						{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/679/0000679792.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=531949ad2d594927a72f9420aefc9c4f&productIndex=1",
+							"productUuid": "531949ad2d594927a72f9420aefc9c4f",
+							"productIndex": "1"
+						},
+						{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677149.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=c75b02f79cd441f0ac1d5e99850bcd44&productIndex=1",
+							"productUuid": "c75b02f79cd441f0ac1d5e99850bcd44",
+							"productIndex": "1"
+						},
+						{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677150.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=e7b17ac6231348d4911dd25e5540b185&productIndex=1",
+							"productUuid": "e7b17ac6231348d4911dd25e5540b185",
+							"productIndex": "1"
+						}
+					],
+				},
+				hanger: {
+					id: "lyjjcdd",
+					title: "http://img.jomoo.com.cn/dev1/0/000/677/0000677202.fid",
+					list: [{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677204.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=21b275b26edb4a3c9dd4c03634a475f6&productIndex=1",
+							"productUuid": "21b275b26edb4a3c9dd4c03634a475f6",
+							"productIndex": "1"
+						},
+						{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/679/0000679793.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=d2495b2e4d9e4f18b136b40742a47cd7&productIndex=1",
+							"productUuid": "d2495b2e4d9e4f18b136b40742a47cd7",
+							"productIndex": "1"
+						},
+						{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677201.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=0201e9d555274f229063e8c371a76748&productIndex=1",
+							"productUuid": "0201e9d555274f229063e8c371a76748",
+							"productIndex": "1"
+						},
+						{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/679/0000679794.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=f46b665d9e604c7192e967c2e63f1767&productIndex=1",
+							"productUuid": "f46b665d9e604c7192e967c2e63f1767",
+							"productIndex": "1"
+						}
+					],
+				},
+				fiveGold: {
+					id: "qwdz",
+					title: "http://img.jomoo.com.cn/dev1/0/000/677/0000677198.fid",
+					list: [{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677179.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=d9a92c79e1a640ab93aa7d43f1f40592&productIndex=1",
+							"productUuid": "d9a92c79e1a640ab93aa7d43f1f40592",
+							"productIndex": "1"
+						},
+						{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677178.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=b41dac9eca084f5f83d09530b7251c11&productIndex=1",
+							"productUuid": "b41dac9eca084f5f83d09530b7251c11",
+							"productIndex": "1"
+						},
+						{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677172.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=e2307dbffeab474db08529eff01465a8&productIndex=1",
+							"productUuid": "e2307dbffeab474db08529eff01465a8",
+							"productIndex": "1"
+						},
+						{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677177.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=37d7d0518d9f4de282b37d3c4b03084f&productIndex=1",
+							"productUuid": "37d7d0518d9f4de282b37d3c4b03084f",
+							"productIndex": "1"
+						},
+						{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677171.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=618346ab18b846a1aba1b329650b1c3f&productIndex=1",
+							"productUuid": "618346ab18b846a1aba1b329650b1c3f",
+							"productIndex": "1"
+						},
+						{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677174.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=9215640e787c4575be90fe7758ba7c3f&productIndex=1",
+							"productUuid": "9215640e787c4575be90fe7758ba7c3f",
+							"productIndex": "1"
+						},
+						{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677173.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=3bee7277bdc14a9fbb948424c884ca96&productIndex=1",
+							"productUuid": "3bee7277bdc14a9fbb948424c884ca96",
+							"productIndex": "1"
+						},
+						{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677176.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=ae3c681efd574d508756af9b95c04f51&productIndex=1",
+							"productUuid": "ae3c681efd574d508756af9b95c04f51",
+							"productIndex": "1"
+						},
+						{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677175.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=1390c9ad11c340abaf0056b0cf934788&productIndex=1",
+							"productUuid": "1390c9ad11c340abaf0056b0cf934788",
+							"productIndex": "1"
+						}
+					],
+				},
+				goTop: "http://img.jomoo.com.cn/dev1/0/000/677/0000677139.fid",
+				btn: '<a class="scroll-top"><img src="http://img.jomoo.com.cn/dev1/0/000/677/0000677139.fid"></a>'
+			},
+			components: {
+				'component-carousel': ComponentCarousel,
+				'component-tiserve': ComponentTiserve,
+				'component-nav': ComponentNav,
+				'component-section': ComponentSection,
+				'modal-live': ModalLive
+			},
+			methods: {
+				// 判断当前环境是小程序还是H5
+				isMiniJudge() {
+					let ua = navigator.userAgent.toLowerCase();
+					if (ua.match(/MicroMessenger/i) == "micromessenger") {
+						//ios的ua中无miniProgram，但都有MicroMessenger（表示是微信浏览器）
+						wx.miniProgram.getEnv((res) => {
+							if (res.miniprogram) {
+								this.isMini = true;
+								this.loadWxJs();
+							} else {
+								this.loadjs();
+							}
+						})
+					} else {
+						this.loadjs();
+					}
+				},
+				loadjs() {
+					var script = document.createElement('script');
+					script.src = 'https://m.ejomoo.com/js/common/base.js';
+					script.type = 'text/javascript';
+					document.head.appendChild(script);
+					script.onload = () => {
+						this.pageFlag = true;
+						//底部导航新增活动按钮
+						getNavicationConfig();
+					}
+				},
+				loadWxJs() {
+					var script = document.createElement('script');
+					script.src = 'https://m.ejomoo.com/js/common/xcxbase.js';
+					script.type = 'text/javascript';
+					document.head.appendChild(script);
+					script.onload = () => {
+						this.pageFlag = true;
+						//底部导航新增活动按钮
+						getNavicationConfig();
+					}
+				},
+				searchEvent() {
+					if (this.isMini) {
+						wx.miniProgram.navigateTo({
+							url: '/pages/shop/search'
+						})
+					} else {
+						localStorage.setItem("searchBackUrl", "http://m.ejomoo.com/h5/templet/shop/index.html");
+						window.location.href = 'http://m.ejomoo.com/h5/templet/search/initSearch.html';
+					}
+				},
+				homeClickEvent() {
+					if (this.isMini) {
+						wx.miniProgram.switchTab({
+							url: '/pages/shop/index'
+						})
+					} else {
+						window.location.href = 'http://m.ejomoo.com/';
+					}
+				},
+				classifyClickEvent() {
+					if (this.isMini) {
+						wx.miniProgram.switchTab({
+							url: '/pages/shop/classify'
+						})
+					} else {
+						window.location.href = 'http://m.ejomoo.com/h5/templet/category/category.html';
+					}
+				},
+				shopcartClickEvent() {
+					if (this.isMini) {
+						wx.miniProgram.switchTab({
+							url: '/pages/cart/index'
+						})
+					} else {
+						window.location.href = 'http://m.ejomoo.com/h5/templet/cart/cart.html';
+					}
+				},
+				meClickEvent() {
+					if (this.isMini) {
+						wx.miniProgram.switchTab({
+							url: '/pages/mine/index'
+						})
+					} else {
+						window.location.href = 'http://m.ejomoo.com/h5/templet/personal/mine.html';
+					}
+				},
+				goDetial(url, productUuid, productIndex, activityUuid) {
+					if (this.isMini) { // 如果当前处于小程序中，调用跳转到小程序页面方法
+						if (productIndex == 1) { //普通商品
+							wx.miniProgram.navigateTo({
+								url: '/pages/shop/details?productUuid=' + productUuid + '&productIndex=' + productIndex + ''
+							})
+						} else if (productIndex == 10) { //优惠券商品
+							wx.miniProgram.navigateTo({
+								url: '/pages/shop/detailsCoupon?productUuid=' + productUuid + '&productIndex=' + productIndex + ''
+							})
+						} else if (productIndex == 20) { //优惠券
+							wx.miniProgram.navigateTo({
+								url: '/pages/activity/getcoupon?logUuid=' + productUuid + ''
+							})
+						} else if (productIndex == 2) { //秒杀
+							wx.miniProgram.navigateTo({
+								url: '/pages/shop/detailsSeckill?skuNo=' + productUuid + '&activityUuid=' + activityUuid + ''
+							})
+						} else if (productIndex == 4) { //拼团
+							wx.miniProgram.navigateTo({
+								url: '/pages/pt/details?pt=' + activityUuid + ''
+							})
+						} else {
+							window.location.href = url;
+						}
+					} else {
+						window.location.href = url;
+					}
+				},
+				// 领取优惠券
+				getConpon(type, uuid) {
+					let that = this;
+					var customerUuid = localStorage.getItem('userId');
+					if (customerUuid) {
+						if (type == '1') { //优惠券
+							var token = localStorage.getItem('token');
+							var sessionId = localStorage.getItem('sessionId');
+							var DES3Str = DES3.encrypt("123456789012345678901234", '{"opeType":"receiveCoupon","map":{"token":"' + token +
+								'","sessionId":"' + sessionId + '","customerUuid":"' + customerUuid + '","couponTypeUuid":"' + uuid + '"}}');
+							var url = 'http://m.ejomoo.com/wap/api/app/appCall?' + 'jsonParam=' + DES3Str;
+							$.ajax({
+								type: 'POST',
+								url: url,
+								async: false,
+								dataType: 'json',
+								success: function(data) {
+									var returncode = data.return_code;
+									if (returncode != "0") {
+										if (data.message == "成功") {
+											mui.alert('领取' + data.message, '提示');
+										} else {
+											if (returncode != '49' && returncode != '50' && returncode != '51') {
+												mui.alert(data.message, '提示');
+											}
+										}
+									} else {
+										mui.alert('领取成功，使用时间：9月19日00:00 - 24:00', '提示');
+									}
+								}
+							})
+						}
+					} else {
+						mui.confirm('当前未登录，是否去登录?', '提示', function(e) {
+							if (e.index == '1') {
+								var url = window.location.href
+								localStorage.setItem('loginJump', url);
+								window.location.href = 'http://m.ejomoo.com/h5/templet/login/login1.html'
+							} else {
+								console.log("用户点击取消");
+							}
+						});
+					}
+				},
+			},
+			created() {
+				this.isMiniJudge();
+			},
+			mounted() {
+				var that = this;
+				var swiper = new Swiper('.swiper-container', {
+					direction: 'horizontal',
+					autoplay: 3000,
+					loop: false, // 循环模式选项
+				})
+				setTimeout(function () {
+					that.waiterAlary = true
+				},300)
+				document.addEventListener("WeixinJSBridgeReady", function() {
+					document.getElementById('video').play();
+				}, false);
+				$('.scroll-top').on('click', function() {
+					$("html,body").animate({
+						scrollTop: '0px'
+					}, 800);
+				});
+				$('.live-room, .live-float').on('click', () => {
+					this.isvcodeLive = true;
+				});
+			}
+		})
+	</script>
+	<!--<script type="text/javascript" src="https://m.ejomoo.com/js/common/cartNum.js"></script>-->
+
+</html>
