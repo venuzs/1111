@@ -132,7 +132,7 @@ a{
 .jm-pr .jm-prbox{
 	position: absolute;
 	left: 50%;
-	bottom: calc(38rem / 46.875);
+	bottom: calc(200rem / 46.875);
 	transform: translateX(-50%);
 	z-index: 10;
 }

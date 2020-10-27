@@ -86,7 +86,30 @@
 						<!--          <p>直播</p>-->
 						<!--        </div>-->
 					</div>
-
+          <div class="jm-headerInfo">
+            <!--倒计时-->
+            <div class="jm-liveCountdown">
+              <p v-if="activitydjs">活动开始倒计时 {{activitydjs}}</p>
+              <p v-else>活动进行中...</p>
+            </div>
+            <!--倒计时end-->
+            <!--报名数统计展示-->
+            <div class="jm-statistics">
+              <div class="statistics-itme">
+                <div class="itme-num">{{statisticsInfo.enrollNum || 0}}</div>
+                <span class="item-key">报名数</span>
+              </div>
+              <div class="statistics-itme">
+                <div class="itme-num">{{statisticsInfo.shareNum || 0}}</div>
+                <span class="item-key">分享数</span>
+              </div>
+              <div class="statistics-itme">
+                <div class="itme-num">{{statisticsInfo.browseNum || 0}}</div>
+                <span class="item-key">浏览数</span>
+              </div>
+            </div>
+            <!--报名数统计展示end-->
+          </div>
 				</div>
 
 				<!--    <div class="swiper-container" >-->
@@ -632,7 +655,7 @@
 				var that = this;
 				this.timer = setInterval(() => {
 					var currenttime = new Date().getTime();
-					var realEndTime = '2020/11/11 19:30:00';
+					var realEndTime = '2020/11/11 20:00:00';
 					realEndTime = new Date(realEndTime).getTime()
 					var millisecond = Math.floor((realEndTime - currenttime) / 1000);
 					this.activitydjs = this.formatSeconds(millisecond);
@@ -1039,6 +1062,7 @@
 						dataType: 'json',
 						success: function(data) {
 							if (data.return_code == '0') {
+								console.log(data)
 								that.enrollFlag = data.enrollFlag
 								that.activityInfo = data.activityInfo
 								that.statisticsInfo = data.statisticsInfo
