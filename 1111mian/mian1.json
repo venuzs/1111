@@ -51,15 +51,15 @@
  "oneginauto": "http://img.jomoo.com.cn/dev1/0/000/677/0000677151.fid",
  "showproduct": [{
      "imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682097.fid",
-     "link": "/pages/shop/detailsCoupon?productUuid=3422bd8013e1482aa2a10e16153f9020&productIndex=10"
+     "link": "/pages/shop/details?productUuid=3422bd8013e1482aa2a10e16153f9020&productIndex=1"
    },
    {
      "imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682098.fid",
-     "link": "/pages/shop/detailsCoupon?productUuid=d46f682f02c4460b9e7f630df63fa7cd&productIndex=10"
+     "link": "/pages/shop/details?productUuid=d46f682f02c4460b9e7f630df63fa7cd&productIndex=1"
    },
    {
      "imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682099.fid",
-     "link": "/pages/shop/detailsCoupon?productUuid=4c8d110ebe6345d7b39e195c132d00da&productIndex=10"
+     "link": "/pages/shop/details?productUuid=4c8d110ebe6345d7b39e195c132d00da&productIndex=1"
    }
  ],
  "screamtit": "http://img.jomoo.com.cn/dev1/0/000/682/0000682096.fid",
