@@ -1,0 +1,131 @@
+{
+  "room": 136,
+  "yyroom": 136,
+  "mainEnterImg": "http://img.jomoo.com.cn/dev1/0/000/677/0000677687.fid",
+  "liveingImg": "http://img.jomoo.com.cn/dev1/0/000/625/0000625286.fid",
+  "liveEdImg": "http://img.jomoo.com.cn/dev1/0/000/622/0000622001.fid",
+  "showSeeBack": false,
+  "fissionLive": false,
+  "banner": "http://img.jomoo.com.cn/dev1/0/000/681/0000681031.fid",
+  "livead1": "",
+  "livead1Link": "",
+  "livead2": "http://img.jomoo.com.cn/dev1/0/000/677/0000677110.fid",
+  "livead2Link": "/pages/customized/need_customized",
+  "zeroBtn": "http://img.jomoo.com.cn/dev1/0/000/677/0000677110.fid",
+  "zeroBtnLink": "/pages/shop/detailsSeckill?skuNo=DZSQ500&activityUuid=24537c8992284100b467928b9d1bedeb&productIndex=2",
+  "livePromise": "http://img.jomoo.com.cn/dev1/0/000/677/0000677116.fid",
+  "goTopBg": "http://img.jomoo.com.cn/dev1/0/000/681/0000681036.fid",
+  "libmBtnStr": "http://img.jomoo.com.cn/dev1/0/000/681/0000681032.fid",
+  "libmBtnEnd": "http://img.jomoo.com.cn/dev1/0/000/677/0000677119.fid",
+  "bkdpListObj": {
+    "title": "http://img.jomoo.com.cn/dev1/0/000/681/0000681033.fid",
+    "timerLine": "http://img.jomoo.com.cn/dev1/0/000/677/0000677994.fid"
+  },
+  "sckillListObj": {
+    "title": "http://img.jomoo.com.cn/dev1/0/000/681/0000681034.fid"
+  },
+  "ptListObj": {
+    "title": "http://img.jomoo.com.cn/dev1/0/000/681/0000681035.fid"
+  },
+  "couponList": [
+    {
+      "src": "http://img.jomoo.com.cn/dev1/0/000/677/0000677993.fid",
+      "type": "满减券",
+      "money": "50",
+      "rule": "单笔订单满2999使用",
+      "uuid": "9224328dcf7b484b93ae18dd0fd9c709",
+      "link": "/pages/shop/detailsCoupon?productUuid=31bd1107ca824aafb150be6056290d6d&productIndex=10"
+    },
+    {
+      "type": "满减券",
+      "money": "100",
+      "rule": "单笔订单满4999使用",
+      "uuid": "56e50b764b594c7aa643f65581ea09af",
+      "link": "/pages/shop/detailsCoupon?productUuid=b44fa6ac913f4d01a2a1b74b6fa152af&productIndex=10"
+    },
+    {
+      "type": "满减券",
+      "money": "500",
+      "rule": "单笔订单满9999使用",
+      "link": "/pages/shop/detailsCoupon?productUuid=d85a036252d84aa4b1336968cd80a5d6&productIndex=10"
+    }
+  ],
+  "starPro": {
+    "videoPoster": "https://1612.cdn-vod.huaweicloud.com/asset/926e25579a960342ece979af9f2ce1ff/cover/Cover0.jpg",
+    "videoUrl": "https://1612.cdn-vod.huaweicloud.com/asset/926e25579a960342ece979af9f2ce1ff/play_video/59876bb3da1b8e44bda5bb6fe4b49697_1.mp4",
+    "i4Pic": "http://img.jomoo.com.cn/dev1/0/000/677/0000677700.fid",
+    "i4ProPic": "http://img.jomoo.com.cn/dev1/0/000/677/0000677120.fid",
+    "link": "/pages/shop/details?productUuid=8c3360bf79d74e83b722d968ac22ac56&productIndex=1"
+  },
+  "bkdpList": [
+    {
+      "banSrc": "http://img.jomoo.com.cn/dev1/0/000/677/0000677095.fid",
+      "link": "/pages/shop/detailsCoupon?productUuid=eab6216070dd48ba8d594e5f710c0ca6&productIndex=10"
+    },
+    {
+      "banSrc": "http://img.jomoo.com.cn/dev1/0/000/677/0000677114.fid",
+      "link": "/pages/shop/detailsCoupon?productUuid=32ccbef8a63741e9b8d860cc0a3c421a&productIndex=10"
+    },
+    {
+      "banSrc": "http://img.jomoo.com.cn/dev1/0/000/677/0000677675.fid",
+      "link": "/pages/shop/detailsCoupon?productUuid=a7cd7ebf459c4b81ad02cef4c153c4b3&productIndex=10"
+    }
+  ],
+  "sckillList": [
+    {
+      "imgUrl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677995.fid",
+      "isOver": false,
+      "link": "/pages/shop/detailsSeckill?skuNo=74078-156/1C-1&activityUuid=a6398294f4604021a97ada4811fcbfe8&productIndex=2"
+    },
+    {
+      "imgUrl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677996.fid",
+      "isOver": false,
+      "link": "/pages/shop/detailsSeckill?skuNo=S177013-2B01-1&activityUuid=a6398294f4604021a97ada4811fcbfe8&productIndex=2"
+    },{
+      "imgUrl": "http://img.jomoo.com.cn/dev1/0/000/681/0000681028.fid",
+      "isOver": false,
+      "link": "/pages/shop/detailsSeckill?skuNo=931908-27Z-1&activityUuid=892397cbf967498384dd2ef165ca08f7&productIndex=2"
+    },
+    {
+      "imgUrl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677998.fid",
+      "isOver": false,
+      "link": "/pages/shop/detailsSeckill?skuNo=33139-050/1B-Z&activityUuid=892397cbf967498384dd2ef165ca08f7&productIndex=2"
+    },
+    {
+      "imgUrl": "http://img.jomoo.com.cn/dev1/0/000/681/0000681029.fid",
+      "isOver": false,
+      "link": "/pages/shop/detailsSeckill?skuNo=931909-27Z-1&activityUuid=e4d31b34e99c44ada387a00b006288d4&productIndex=2"
+    },
+    {
+      "imgUrl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677400.fid",
+      "isOver": false,
+      "link": "/pages/shop/detailsSeckill?skuNo=92102-8C-1&activityUuid=e4d31b34e99c44ada387a00b006288d4&productIndex=2"
+    },{
+      "imgUrl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677401.fid",
+      "isOver": false,
+      "link": "/pages/shop/detailsSeckill?skuNo=936008-7Z-1&activityUuid=48767259cb574ad88b4518cd8460b3a9&productIndex=2"
+    },
+    {
+      "imgUrl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677402.fid",
+      "isOver": false,
+      "link": "/pages/shop/detailsSeckill?skuNo=33139-050/1B-Z&activityUuid=48767259cb574ad88b4518cd8460b3a9&productIndex=2"
+    }
+  ],
+  "ptList": [
+    {
+      "disabled": false,
+      "picUrl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677584.fid",
+      "link": "/pages/pt/details?pt=promotion8000000017"
+    },
+    {
+      "disabled": false,
+      "picUrl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677585.fid",
+      "link": "/pages/pt/details?pt=promotion3000000009"
+    },
+    {
+      "disabled": false,
+      "picUrl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677586.fid",
+      "link": "/pages/pt/details?pt=promotion5000000015"
+    }
+  ]
+}
