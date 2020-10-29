@@ -60,15 +60,15 @@
   "bkdpList": [
     {
       "banSrc": "http://img.jomoo.com.cn/dev1/0/000/683/0000683420.fid",
-      "link": "/pages/shop/detailsCoupon?productUuid=eab6216070dd48ba8d594e5f710c0ca6&productIndex=10"
+      "link": "/pages/shop/details?productUuid=3422bd8013e1482aa2a10e16153f9020&productIndex=1"
     },
     {
       "banSrc": "http://img.jomoo.com.cn/dev1/0/000/683/0000683421.fid",
-      "link": "/pages/shop/detailsCoupon?productUuid=32ccbef8a63741e9b8d860cc0a3c421a&productIndex=10"
+      "link": "/pages/shop/details?productUuid=d46f682f02c4460b9e7f630df63fa7cd&productIndex=1"
     },
     {
-      "banSrc": "http://img.jomoo.com.cn/dev1/0/000/683/0000683422.fid",
-      "link": "/pages/shop/detailsCoupon?productUuid=a7cd7ebf459c4b81ad02cef4c153c4b3&productIndex=10"
+      "banSrc": "http://img.jomoo.com.cn/dev1/0/000/683/0000683450.fid",
+      "link": "/pages/shop/details?productUuid=3e1d50280f6645e1ad2985671d20f21c&productIndex=1"
     }
   ],
   "sckillList": [
