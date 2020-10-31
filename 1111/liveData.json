@@ -74,12 +74,12 @@
   "sckillList": [
     {
       "imgUrl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677995.fid",
-      "isOver": false,
+      "isOver": true,
       "link": "/pages/shop/detailsSeckill?skuNo=74078-156/1C-1&activityUuid=a6398294f4604021a97ada4811fcbfe8&productIndex=2"
     },
     {
       "imgUrl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677996.fid",
-      "isOver": false,
+      "isOver": true,
       "link": "/pages/shop/detailsSeckill?skuNo=S177013-2B01-1&activityUuid=a6398294f4604021a97ada4811fcbfe8&productIndex=2"
     },{
       "imgUrl": "http://img.jomoo.com.cn/dev1/0/000/681/0000681028.fid",

@@ -118,16 +118,17 @@ a{
 }
 .superkill a .blackindex{
 	position: absolute;
-	background-color: rgba(8, 8, 8, 0.6);
-	width: 100%;
-	height: 100%;
-	top: 0px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 0.7rem;
-	color: #FFFFFF;
-	z-index: 999;
+    background: url(http://img.jomoo.com.cn/dev1/0/000/680/0000680527.fid) no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.7rem;
+    color: #FFFFFF;
+    z-index: 999;
 }
 .jm-pr .jm-prbox{
 	position: absolute;
