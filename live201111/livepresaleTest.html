@@ -179,7 +179,7 @@
 					<div class="superkill">
 						<a @click="!item.isOver&&getDetail(item.link)" v-for="(item,index) in czms.list">
 							<img :src="item.banSrc">
-							<div class="blackindex" v-if="item.isOver">活动已结束</div>
+							<div class="blackindex" v-if="item.isOver"></div>
 						</a>
 					</div>
 				</div>
@@ -568,12 +568,12 @@
 					list: [{
 							banSrc: 'http://img.jomoo.com.cn/dev1/0/000/677/0000677995.fid',
 							link: 'http://m.ejomoo.com/h5/templet/detail/b2b-details-seckill.html?skuNo=74078-156/1C-1&activityUuid=a6398294f4604021a97ada4811fcbfe8&productIndex=2',
-							isOver: false,
+							isOver: true,
 						},
 						{
 							banSrc: 'http://img.jomoo.com.cn/dev1/0/000/677/0000677996.fid',
 							link: 'http://m.ejomoo.com/h5/templet/detail/b2b-details-seckill.html?skuNo=S177013-2B01-1&activityUuid=a6398294f4604021a97ada4811fcbfe8&productIndex=2',
-							isOver: false,
+							isOver: true,
 						},
 
 						{

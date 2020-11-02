@@ -54,7 +54,7 @@
  "sutogisImg": "http://img.jomoo.com.cn/dev1/0/000/677/0000677154.fid",
  "oneginauto": "http://img.jomoo.com.cn/dev1/0/000/677/0000677151.fid",
  "showproduct": [{
-     "imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683263.fid",
+     "imgurl": "http://img.jomoo.com.cn//dev1/0/000/686/0000686402.fid",
      "link": "/pages/shop/details?productUuid=3422bd8013e1482aa2a10e16153f9020&productIndex=1"
    },
    {
@@ -62,13 +62,13 @@
      "link": "/pages/shop/details?productUuid=d46f682f02c4460b9e7f630df63fa7cd&productIndex=1"
    },
    {
-     "imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683265.fid",
+     "imgurl": "http://img.jomoo.com.cn//dev1/0/000/686/0000686403.fid",
      "link": "/pages/shop/details?productUuid=4c8d110ebe6345d7b39e195c132d00da&productIndex=1"
    }
  ],
  "screamtit": "http://img.jomoo.com.cn/dev1/0/000/682/0000682096.fid",
  "magicImg": [{
-     "imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683266.fid",
+     "imgurl": "http://img.jomoo.com.cn//dev1/0/000/686/0000686404.fid",
      "link": "/pages/shop/details?productUuid=3e1d50280f6645e1ad2985671d20f21c&productIndex=1"
    },
    {
@@ -85,11 +85,11 @@
      "link": "/pages/shop/details?productUuid=76bc17eaa2774cd9b1e0a91b557bb4f8&productIndex=1"
    },
    {
-     "imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682104.fid",
+     "imgurl": "http://img.jomoo.com.cn//dev1/0/000/686/0000686124.fid",
      "link": "/pages/shop/details?productUuid=a851cd7c91a240149eea3c72b37f0cd5&productIndex=1"
    },
    {
-     "imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682105.fid",
+     "imgurl": "http://img.jomoo.com.cn//dev1/0/000/686/0000686125.fid",
      "link": "/pages/shop/details?productUuid=8c3360bf79d74e83b722d968ac22ac56&productIndex=1"
    },
    {
@@ -147,7 +147,7 @@
      "link": "/pages/shop/details?productUuid=33ccd0b68fa04a8fbd4f8773da51b628&productIndex=1"
    },
    {
-     "imgurl": "http://img.jomoo.com.cn/dev1/0/000/684/0000684072.fid",
+     "imgurl": "http://img.jomoo.com.cn//dev1/0/000/686/0000686126.fid",
      "link": "/pages/shop/details?productUuid=c0f9309828cb47e582010f12234df52a&productIndex=1"
    },
    {
@@ -155,11 +155,11 @@
      "link": "/pages/shop/details?productUuid=c084a9c91c074c3abbd7baf7e4e12410&productIndex=1"
    },
    {
-     "imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682127.fid",
+     "imgurl": "http://img.jomoo.com.cn//dev1/0/000/686/0000686127.fid",
      "link": "/pages/shop/details?productUuid=5a3ce2681e8c445c8c6dabebb73ec658&productIndex=1"
    },
    {
-     "imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682128.fid",
+     "imgurl": "http://img.jomoo.com.cn//dev1/0/000/686/0000686128.fid",
      "link": "/pages/shop/details?productUuid=da9f2f508ed64783ac1774041bec9fc9&productIndex=1"
    },
    {
