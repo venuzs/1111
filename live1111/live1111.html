@@ -334,16 +334,6 @@
 			height: calc(75rem / 46.875);
 			background: url('http://img.jomoo.com.cn/dev1/0/000/602/0000602162.fid') no-repeat center top/cover;
 		}
-		.produ-pri {
-			position: relative;
-		}
-		.produ-pri a {
-			position: absolute;
-			top: calc(162rem / 46.875);
-			left: calc(312rem / 46.875);
-			width: calc(420rem / 46.875);
-			height: calc(284rem / 46.875);
-		}
 	</style>
 	</head>
 
@@ -362,6 +352,7 @@
 			<!--	</div>-->
 			<div class="contentbox">
 				<component-carousel></component-carousel>
+				<div><img :src="newyImg" alt=""></div>
 				<div class="coupontit" :id="coupontit.id">
 					<div class="coupontititem" v-for="(item,index) in coupontit.list">
 						<img :src="item.imgurl" @click="goDetial(item.link,item.productUuid,item.productIndex,item.activityUuid)" alt="">
@@ -373,19 +364,29 @@
 					<div class="product_mis_list1">
 						<div class="dingin" v-for="(item,index) in czms.list">
 							<div class="zz_s" :class="waiterAlary?'is-show':''" v-if="item.isOver"></div>
-							<img :src="item.src">
+							<img :src="item.src" @click="item.isOver==false && goDetial(item.link,item.productUuid)">
 						</div>
 					</div>
 				</div>
-				<div class="product_mis produ-pri">
-					<img :src="imgTit">
-					<img :src="inToUrl">
-					<a href="http://m.ejomoo.com/h5/templet/pt/details.html?pt=promotion5000000015"></a>
+				<!-- 入群享特价 -->
+				<div class="joinproduct" @click="goDetial(join.imgurl)">
+					<img :src="join.title">
+					<img :src="join.qrcode">
 				</div>
+
 				<component-nav :navlist="nav"></component-nav>
+				<!-- 抢先预订 -->
+				<div class="" :id="qxyd.id">
+					<img :src="preemption.title">
+					<img :src="preemption.bottom">
+					<div>
+						<img :src="item.src" @click="goDetial(item.link,item.productUuid)" v-for="(item,index) in preemption.list">
+					</div>
+				</div>
 				<!-- 尖货 -->
 				<div class="" :id="bkzq.id">
 					<img :src="detonate.title">
+					<img :src="detonate.bottom">
 					<div>
 						<img :src="item.src" @click="goDetial(item.link,item.productUuid)" v-for="(item,index) in detonate.list">
 					</div>
@@ -498,7 +499,7 @@
 			data() {
 				return {
 					carouselList: [{
-						src: 'http://img.jomoo.com.cn/dev1/0/000/683/0000683260.fid'
+						src: 'http://img.jomoo.com.cn/dev1/0/000/683/0000683751.fid'
 					}, ]
 				}
 			},
@@ -799,41 +800,60 @@
 						target: "szsm"
 					},
 				],
-				inToUrl: 'http://img.jomoo.com.cn/dev1/0/000/684/0000684071.fid',
-				imgTit: "http://img.jomoo.com.cn//dev1/0/000/684/0000684591.fid",
+				newyImg: 'http://img.jomoo.com.cn/dev1/0/000/683/0000683752.fid',
 				coupontit: {
 					id: "cztc",
 					list: [{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683261.fid",
-							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details-coupon.html?productUuid=31bd1107ca824aafb150be6056290d6d&productIndex=10",
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683753.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details-coupon.html?productUuid=37f1145a20cf42fdb25319485e2b9b24&productIndex=10",
 							"productUuid": "500-50",
 							"productIndex": "2",
-							"activityUuid": "31bd1107ca824aafb150be6056290d6d"
+							"activityUuid": "37f1145a20cf42fdb25319485e2b9b24"
 						},
 						{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683262.fid",
-							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details-coupon.html?productUuid=b44fa6ac913f4d01a2a1b74b6fa152af&productIndex=10",
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683754.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details-coupon.html?productUuid=0838226f3abb4815a0b435b28e250ee5&productIndex=10",
 							"productUuid": "500-50",
 							"productIndex": "2",
-							"activityUuid": "b44fa6ac913f4d01a2a1b74b6fa152af"
-						}
+							"activityUuid": "0838226f3abb4815a0b435b28e250ee5"
+						},
+						{
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683755.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details-coupon.html?productUuid=c4474f4c72964dbea41923553d312d8d&productIndex=10",
+							"productUuid": "5000-500",
+							"productIndex": "2",
+							"activityUuid": "c4474f4c72964dbea41923553d312d8d"
+						},
 					]
 				},
 				czms: {
 					id: 'znmt',
 					bg: '',
-					title: 'http://img.jomoo.com.cn/dev1/0/000/682/0000682093.fid',
-					list: [
-						{
-							src: "http://img.jomoo.com.cn/dev1/0/000/682/0000682094.fid",
-							link: "",
+					title: 'http://img.jomoo.com.cn/dev1/0/000/683/0000683756.fid',
+					list: [{
+							src: "http://img.jomoo.com.cn/dev1/0/000/683/0000683757.fid",
+							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details-seckill.html?skuNo=931908-27Z-1&activityUuid=892397cbf967498384dd2ef165ca08f7&productIndex=2",
 							productUuid: "",
 							productIndex: "1",
 							isOver: false
 						},
 						{
-							src: "http://img.jomoo.com.cn/dev1/0/000/682/0000682095.fid",
-							link: "",
+							src: "http://img.jomoo.com.cn/dev1/0/000/683/0000683758.fid",
+							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details-seckill.html?skuNo=2223-505/1B-Z&activityUuid=895a784acbad4f59911b04bcaec2655b&productIndex=2",
+							productUuid: "",
+							productIndex: "1",
+							isOver: false
+						},
+						{
+							src: "http://img.jomoo.com.cn/dev1/0/000/683/0000683759.fid",
+							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details-seckill.html?skuNo=931909-27Z-1&activityUuid=e4d31b34e99c44ada387a00b006288d4&productIndex=2",
+							productUuid: "",
+							productIndex: "1",
+							isOver: false
+						},
+						{
+							src: "http://img.jomoo.com.cn/dev1/0/000/683/0000683760.fid",
+							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details-seckill.html?skuNo=92102-8C-1&activityUuid=e4d31b34e99c44ada387a00b006288d4&productIndex=2",
 							productUuid: "",
 							productIndex: "1",
 							isOver: false
@@ -850,16 +870,22 @@
 					id: "tc"
 				},
 				join: {
-					title: 'http://img.jomoo.com.cn/dev1/0/000/677/0000677156.fid',
-					qrcode: 'http://img.jomoo.com.cn/dev1/0/000/677/0000677155.fid',
+					title: 'http://img.jomoo.com.cn/dev1/0/000/683/0000683761.fid',
+					qrcode: 'http://img.jomoo.com.cn/dev1/0/000/683/0000683762.fid',
+					imgurl:"http://m.ejomoo.com/h5/templet/pt/details.html?pt=promotion5000000015",
+					
 				},
 				nav: [{
 						url: "http://img.jomoo.com.cn/dev1/0/000/677/0000677126.fid",
 						target: "cztc"
 					},
 					{
-						url: "http://img.jomoo.com.cn/dev1/0/000/682/0000682272.fid",
+						url: "http://img.jomoo.com.cn/dev1/0/000/677/0000677127.fid",
 						target: "znmt"
+					},
+					{
+						url: "http://img.jomoo.com.cn/dev1/0/000/677/0000677129.fid",
+						target: "ysg"
 					},
 					{
 						url: "http://img.jomoo.com.cn/dev1/0/000/677/0000677131.fid",
@@ -895,115 +921,92 @@
 					},
 				],
 				preemption: {
-					title: 'http://img.jomoo.com.cn/dev1/0/000/677/0000677154.fid',
-					bottom: 'http://img.jomoo.com.cn/dev1/0/000/677/0000677151.fid',
+					title: 'http://img.jomoo.com.cn/dev1/0/000/683/0000683763.fid',
+					bottom: 'http://img.jomoo.com.cn/dev1/0/000/683/0000683764.fid',
 					list: [{
-							src: "http://img.jomoo.com.cn/dev1/0/000/677/0000677193.fid",
-							link: 'http://m.ejomoo.com/h5/templet/detail/b2b-details-coupon.html?productUuid=eab6216070dd48ba8d594e5f710c0ca6&productIndex=10',
+							src: "http://img.jomoo.com.cn/dev1/0/000/683/0000683765.fid",
+							link: 'http://m.ejomoo.com/h5/templet/detail/b2b-details-coupon.html?productUuid=8d5539aa7a534e9bb3abf7819ae617d8&productIndex=10',
 							productUuid: "",
-							productIndex: "1"
+							productIndex: "10"
 						},
 						{
-							src: "http://img.jomoo.com.cn/dev1/0/000/677/0000677625.fid",
-							link: 'http://m.ejomoo.com/h5/templet/detail/b2b-details-coupon.html?productUuid=32ccbef8a63741e9b8d860cc0a3c421a&productIndex=10',
+							src: "http://img.jomoo.com.cn/dev1/0/000/683/0000683766.fid",
+							link: 'http://m.ejomoo.com/h5/templet/detail/b2b-details-coupon.html?productUuid=6853d5f24a934cb785cab03f3d20381d&productIndex=10',
 							productUuid: "",
-							productIndex: "1"
+							productIndex: "10"
 						},
 						{
-							src: "http://img.jomoo.com.cn/dev1/0/000/677/0000677699.fid",
-							link: 'http://m.ejomoo.com/h5/templet/detail/b2b-details-coupon.html?productUuid=a7cd7ebf459c4b81ad02cef4c153c4b3&productIndex=10',
+							src: "http://img.jomoo.com.cn/dev1/0/000/683/0000683767.fid",
+							link: 'http://m.ejomoo.com/h5/templet/detail/b2b-details-coupon.html?productUuid=536fbfa3fab840819594b76d0b223566&productIndex=10',
 							productUuid: "",
-							productIndex: "1"
+							productIndex: "10"
 						}
 					]
 				},
 				detonate: {
-					title: 'http://img.jomoo.com.cn/dev1/0/000/682/0000682096.fid',
+					title: 'http://img.jomoo.com.cn/dev1/0/000/683/0000683768.fid',
+					bottom: 'http://img.jomoo.com.cn/dev1/0/000/683/0000683769.fid',
 					list: [{
-							src: "http://img.jomoo.com.cn//dev1/0/000/686/0000686402.fid",
-							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=3422bd8013e1482aa2a10e16153f9020&productIndex=1",
-							productUuid: "3422bd8013e1482aa2a10e16153f9020",
-							productIndex: "1"
-						},
-						{
-							src: "http://img.jomoo.com.cn/dev1/0/000/683/0000683264.fid",
-							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=d46f682f02c4460b9e7f630df63fa7cd&productIndex=1",
-							productUuid: "d46f682f02c4460b9e7f630df63fa7cd",
-							productIndex: "1"
-						},
-						{
-							src: "http://img.jomoo.com.cn//dev1/0/000/686/0000686403.fid",
-							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=4c8d110ebe6345d7b39e195c132d00da&productIndex=1",
-							productUuid: "4c8d110ebe6345d7b39e195c132d00da",
-							productIndex: "1"
-						},
-						{
-							src: "http://img.jomoo.com.cn//dev1/0/000/686/0000686404.fid",
-							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=3e1d50280f6645e1ad2985671d20f21c&productIndex=1",
-							productUuid: "3e1d50280f6645e1ad2985671d20f21c",
-							productIndex: "1"
-						},
-						{
-							src: "http://img.jomoo.com.cn/dev1/0/000/682/0000682101.fid",
-							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=1e9a86d45ed14ca8a0172ded1821243c&productIndex=1",
-							productUuid: "1e9a86d45ed14ca8a0172ded1821243c",
-							productIndex: "1"
-						}
-					],
-					last: [{
-							src: "http://img.jomoo.com.cn/dev1/0/000/682/0000682102.fid",
-							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=8c8971d139f14af8a2183766028e19ac&productIndex=1",
-							productUuid: "8c8971d139f14af8a2183766028e19ac",
-							productIndex: "1"
-						},
-						{
-							src: "http://img.jomoo.com.cn/dev1/0/000/682/0000682103.fid",
-							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=76bc17eaa2774cd9b1e0a91b557bb4f8&productIndex=1",
-							productUuid: "76bc17eaa2774cd9b1e0a91b557bb4f8",
-							productIndex: "1"
-						},
-						{
-							src: "http://img.jomoo.com.cn/dev1/0/000/682/0000682104.fid",
-							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=a851cd7c91a240149eea3c72b37f0cd5&productIndex=1",
-							productUuid: "a851cd7c91a240149eea3c72b37f0cd5",
-							productIndex: "1"
-						},
-						{
-							src: "http://img.jomoo.com.cn/dev1/0/000/682/0000682105.fid",
+							src: "http://img.jomoo.com.cn/dev1/0/000/683/0000683770.fid",
 							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=8c3360bf79d74e83b722d968ac22ac56&productIndex=1",
 							productUuid: "8c3360bf79d74e83b722d968ac22ac56",
 							productIndex: "1"
 						},
 						{
-							src: "http://img.jomoo.com.cn/dev1/0/000/682/0000682106.fid",
-							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=391973454eaf46bc94187e008d1d729f&productIndex=1",
-							productUuid: "391973454eaf46bc94187e008d1d729f",
+							src: "http://img.jomoo.com.cn/dev1/0/000/683/0000683771.fid",
+							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=001548e5e062470eb25d1e43ad0b4a3a&productIndex=1",
+							productUuid: "001548e5e062470eb25d1e43ad0b4a3a",
 							productIndex: "1"
 						},
 						{
-							src: "http://img.jomoo.com.cn/dev1/0/000/682/0000682107.fid",
-							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=08e57bfa67f24b1db06ea91c5a60cfca&productIndex=1",
-							productUuid: "08e57bfa67f24b1db06ea91c5a60cfca",
+							src: "http://img.jomoo.com.cn/dev1/0/000/683/0000683772.fid",
+							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=4c8d110ebe6345d7b39e195c132d00da&productIndex=1",
+							productUuid: "4c8d110ebe6345d7b39e195c132d00da",
 							productIndex: "1"
-						}
+						},
+					],
+					last: [{
+							src: "http://img.jomoo.com.cn/dev1/0/000/683/0000683773.fid",
+							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=41d02cab7fba48faad48f00085370eb3&productIndex=1",
+							productUuid: "41d02cab7fba48faad48f00085370eb3",
+							productIndex: "1"
+						},
+						{
+							src: "http://img.jomoo.com.cn/dev1/0/000/683/0000683774.fid",
+							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=da9f2f508ed64783ac1774041bec9fc9&productIndex=1",
+							productUuid: "da9f2f508ed64783ac1774041bec9fc9",
+							productIndex: "1"
+						},
+						{
+							src: "http://img.jomoo.com.cn/dev1/0/000/683/0000683775.fid",
+							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=5dd3a088d8bf4fcf8ed20dd0270c861b&productIndex=1",
+							productUuid: "5dd3a088d8bf4fcf8ed20dd0270c861b",
+							productIndex: "1"
+						},
+						{
+							src: "http://img.jomoo.com.cn/dev1/0/000/683/0000683776.fid",
+							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=027cbc0456ee4b3c8b6eb738f5277973&productIndex=1",
+							productUuid: "027cbc0456ee4b3c8b6eb738f5277973",
+							productIndex: "1"
+						},
 					]
 				},
 				setmeal: {
-					title: "http://img.jomoo.com.cn/dev1/0/000/682/0000682108.fid",
+					title: "http://img.jomoo.com.cn/dev1/0/000/683/0000683777.fid",
 					item: {
-						url: "http://img.jomoo.com.cn/dev1/0/000/682/0000682109.fid",
+						url: "http://img.jomoo.com.cn/dev1/0/000/683/0000683778.fid",
 						link: "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=6daf73ac8fa14298b7ae5ee9c72b074d&productIndex=1",
 						productUuid: "6daf73ac8fa14298b7ae5ee9c72b074d",
 						productIndex: "1"
 					},
 					list: [{
-							src: "http://img.jomoo.com.cn/dev1/0/000/682/0000682114.fid",
+							src: "http://img.jomoo.com.cn/dev1/0/000/683/0000683779.fid",
 							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=c199aebd1ae94842a8b9807f75557ed9&productIndex=1",
 							productUuid: "c199aebd1ae94842a8b9807f75557ed9",
 							productIndex: "1"
 						},
 						{
-							src: "http://img.jomoo.com.cn/dev1/0/000/682/0000682115.fid",
+							src: "http://img.jomoo.com.cn/dev1/0/000/683/0000683780.fid",
 							link: "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=d92c043cedf544b9a0dccb4f291edcf3&productIndex=1",
 							productUuid: "d92c043cedf544b9a0dccb4f291edcf3",
 							productIndex: "1"
@@ -1012,128 +1015,92 @@
 				},
 				tiserve: {
 					id: "lyhs",
-					title: "http://img.jomoo.com.cn/dev1/0/000/682/0000682116.fid",
+					title: "http://img.jomoo.com.cn/dev1/0/000/683/0000683781.fid",
 					list: [{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682117.fid",
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683782.fid",
 							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=683d5dd307084bf3be651782dc2a3314&productIndex=1",
 							"productUuid": "683d5dd307084bf3be651782dc2a3314",
 							"productIndex": "1"
 						},
 						{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682118.fid",
-							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=001548e5e062470eb25d1e43ad0b4a3a&productIndex=1",
-							"productUuid": "001548e5e062470eb25d1e43ad0b4a3a",
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683783.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=1e9a86d45ed14ca8a0172ded1821243c&productIndex=1",
+							"productUuid": "1e9a86d45ed14ca8a0172ded1821243c",
 							"productIndex": "1"
 						},
 						{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682119.fid",
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683784.fid",
 							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=6e8a008a6c1342f9bed6ed6e64b50390&productIndex=1",
 							"productUuid": "6e8a008a6c1342f9bed6ed6e64b50390",
 							"productIndex": "1"
 						},
 						{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682120.fid",
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683785.fid",
 							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=2db844a3c6b942b192e165ac3adc8827&productIndex=1",
 							"productUuid": "2db844a3c6b942b192e165ac3adc8827",
-							"productIndex": "1"
-						},
-						{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682121.fid",
-							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=1332bf3bc9eb4abcb079d5faee8fac4a&productIndex=1",
-							"productUuid": "1332bf3bc9eb4abcb079d5faee8fac4a",
-							"productIndex": "1"
-						},
-						{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682122.fid",
-							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=b1eac937a7114f299a81be68ccd31abe&productIndex=1",
-							"productUuid": "b1eac937a7114f299a81be68ccd31abe",
 							"productIndex": "1"
 						}
 					],
 				},
 				closestool: {
 					id: "lyfyg",
-					title: "http://img.jomoo.com.cn/dev1/0/000/682/0000682123.fid",
+					title: "http://img.jomoo.com.cn/dev1/0/000/683/0000683786.fid",
 					list: [{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682124.fid",
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683787.fid",
 							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=33ccd0b68fa04a8fbd4f8773da51b628&productIndex=1",
 							"productUuid": "33ccd0b68fa04a8fbd4f8773da51b628",
 							"productIndex": "1"
 						},
 						{
-							"imgurl": "http://img.jomoo.com.cn//dev1/0/000/686/0000686126.fid",
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683788.fid",
 							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=c0f9309828cb47e582010f12234df52a&productIndex=1",
 							"productUuid": "c0f9309828cb47e582010f12234df52a",
 							"productIndex": "1"
 						},
 						{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682126.fid",
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683789.fid",
 							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=c084a9c91c074c3abbd7baf7e4e12410&productIndex=1",
 							"productUuid": "c084a9c91c074c3abbd7baf7e4e12410",
 							"productIndex": "1"
 						},
 						{
-							"imgurl": "http://img.jomoo.com.cn//dev1/0/000/686/0000686127.fid",
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683790.fid",
 							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=5a3ce2681e8c445c8c6dabebb73ec658&productIndex=1",
 							"productUuid": "5a3ce2681e8c445c8c6dabebb73ec658",
-							"productIndex": "1"
-						},
-						{
-							"imgurl": "http://img.jomoo.com.cn//dev1/0/000/686/0000686128.fid",
-							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=da9f2f508ed64783ac1774041bec9fc9&productIndex=1",
-							"productUuid": "da9f2f508ed64783ac1774041bec9fc9",
-							"productIndex": "1"
-						},
-						{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682129.fid",
-							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=2db54f77a37f4a08a6454ae409b2f3ce&productIndex=1",
-							"productUuid": "2db54f77a37f4a08a6454ae409b2f3ce",
 							"productIndex": "1"
 						}
 					],
 				},
 				showerroom: {
 					id: "wj",
-					title: "http://img.jomoo.com.cn/dev1/0/000/682/0000682130.fid",
+					title: "http://img.jomoo.com.cn/dev1/0/000/683/0000683791.fid",
 					list: [{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682131.fid",
-							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=4344d6f95e1e4a64b840de2ebe66eeb4&productIndex=1",
-							"productUuid": "4344d6f95e1e4a64b840de2ebe66eeb4",
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683792.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=7d2131456654436ba16128a3bf49da8c&productIndex=1",
+							"productUuid": "7d2131456654436ba16128a3bf49da8c",
 							"productIndex": "1"
 						},
 						{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682132.fid",
-							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=60bfec41552a44379a9cea3303c2a527&productIndex=1",
-							"productUuid": "60bfec41552a44379a9cea3303c2a527",
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683793.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=8edef9abd89e40fb9acc565d1fa42e0b&productIndex=1",
+							"productUuid": "8edef9abd89e40fb9acc565d1fa42e0b",
 							"productIndex": "1"
-						},
-						{
-								"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682133.fid",
-								"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=7d2131456654436ba16128a3bf49da8c&productIndex=1",
-								"productUuid": "7d2131456654436ba16128a3bf49da8c",
-								"productIndex": "1"
-							},
-							{
-								"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682134.fid",
-								"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=8edef9abd89e40fb9acc565d1fa42e0b&productIndex=1",
-								"productUuid": "8edef9abd89e40fb9acc565d1fa42e0b",
-								"productIndex": "1"
-							},
+						}
 					],
 					listBtm: [{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682135.fid",
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683794.fid",
 							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=d12d39f84e49451ca73f72651d55c6f6&productIndex=1",
 							"productUuid": "d12d39f84e49451ca73f72651d55c6f6",
 							"productIndex": "1"
 						},
 						{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682136.fid",
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683795.fid",
 							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=d6a25cb8ccf541cab679e22b8cc7c0c6&productIndex=1",
 							"productUuid": "d6a25cb8ccf541cab679e22b8cc7c0c6",
 							"productIndex": "1"
 						},
 						{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682137.fid",
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683796.fid",
 							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=d55f2cec6cd24ce293a32fdeec3d4e67&productIndex=1",
 							"productUuid": "d55f2cec6cd24ce293a32fdeec3d4e67",
 							"productIndex": "1"
@@ -1142,139 +1109,115 @@
 				},
 				kitchen: {
 					id: "hjdq",
-					title: "http://img.jomoo.com.cn/dev1/0/000/682/0000682138.fid",
+					title: "http://img.jomoo.com.cn/dev1/0/000/683/0000683797.fid",
 					list: [{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682139.fid",
-							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=8bf9c88dc9784bb6b127c466831b52ee&productIndex=1",
-							"productUuid": "8bf9c88dc9784bb6b127c466831b52ee",
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683798.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=08e57bfa67f24b1db06ea91c5a60cfca&productIndex=1",
+							"productUuid": "08e57bfa67f24b1db06ea91c5a60cfca",
 							"productIndex": "1"
 						},
 						{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682140.fid",
+							"imgurl": "http://img.jomoo.com.cn//dev1/0/000/684/0000684273.fid",
 							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=531949ad2d594927a72f9420aefc9c4f&productIndex=1",
 							"productUuid": "531949ad2d594927a72f9420aefc9c4f",
 							"productIndex": "1"
 						},
 						{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682141.fid",
-							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=c75b02f79cd441f0ac1d5e99850bcd44&productIndex=1",
-							"productUuid": "c75b02f79cd441f0ac1d5e99850bcd44",
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683800.fid",
+							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=391973454eaf46bc94187e008d1d729f&productIndex=1",
+							"productUuid": "391973454eaf46bc94187e008d1d729f",
 							"productIndex": "1"
 						},
 						{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682142.fid",
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683801.fid",
 							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=e7b17ac6231348d4911dd25e5540b185&productIndex=1",
 							"productUuid": "e7b17ac6231348d4911dd25e5540b185",
-							"productIndex": "1"
-						},
-						{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682143.fid",
-							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=51393855cd514594b40e521103daf40e&productIndex=1",
-							"productUuid": "51393855cd514594b40e521103daf40e",
-							"productIndex": "1"
-						},
-						{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682145.fid",
-							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=4cb16e1e698144f781b4864f6ae669b9&productIndex=1",
-							"productUuid": "4cb16e1e698144f781b4864f6ae669b9",
 							"productIndex": "1"
 						}
 					],
 				},
 				hanger: {
 					id: "lyjjcdd",
-					title: "http://img.jomoo.com.cn/dev1/0/000/682/0000682146.fid",
+					title: "http://img.jomoo.com.cn/dev1/0/000/683/0000683802.fid",
 					list: [{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682148.fid",
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683803.fid",
 							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=21b275b26edb4a3c9dd4c03634a475f6&productIndex=1",
 							"productUuid": "21b275b26edb4a3c9dd4c03634a475f6",
 							"productIndex": "1"
 						},
 						{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682149.fid",
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683804.fid",
 							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=3312eb1ff44e402492423b93a01b315c&productIndex=1",
 							"productUuid": "3312eb1ff44e402492423b93a01b315c",
 							"productIndex": "1"
 						},
 						{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682150.fid",
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683805.fid",
 							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=0201e9d555274f229063e8c371a76748&productIndex=1",
 							"productUuid": "0201e9d555274f229063e8c371a76748",
 							"productIndex": "1"
 						},
 						{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682151.fid",
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683806.fid",
 							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=f46b665d9e604c7192e967c2e63f1767&productIndex=1",
 							"productUuid": "f46b665d9e604c7192e967c2e63f1767",
-							"productIndex": "1"
-						},
-						{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682152.fid",
-							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=d6d78fc05f7549778bd2167adf87ace4&productIndex=1",
-							"productUuid": "d6d78fc05f7549778bd2167adf87ace4",
-							"productIndex": "1"
-						},
-						{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682153.fid",
-							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=94102b8ecfbc4116ab80ebd9e4e97acb&productIndex=1",
-							"productUuid": "94102b8ecfbc4116ab80ebd9e4e97acb",
 							"productIndex": "1"
 						}
 					],
 				},
 				fiveGold: {
 					id: "qwdz",
-					title: "http://img.jomoo.com.cn/dev1/0/000/682/0000682154.fid",
+					title: "http://img.jomoo.com.cn/dev1/0/000/683/0000683807.fid",
 					list: [{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682155.fid",
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683808.fid",
 							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=d9a92c79e1a640ab93aa7d43f1f40592&productIndex=1",
 							"productUuid": "d9a92c79e1a640ab93aa7d43f1f40592",
 							"productIndex": "1"
 						},
 						{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682167.fid",
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683809.fid",
 							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=b41dac9eca084f5f83d09530b7251c11&productIndex=1",
 							"productUuid": "b41dac9eca084f5f83d09530b7251c11",
 							"productIndex": "1"
 						},
 						{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682168.fid",
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683810.fid",
 							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=e2307dbffeab474db08529eff01465a8&productIndex=1",
 							"productUuid": "e2307dbffeab474db08529eff01465a8",
 							"productIndex": "1"
 						},
 						{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682169.fid",
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683811.fid",
 							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=37d7d0518d9f4de282b37d3c4b03084f&productIndex=1",
 							"productUuid": "37d7d0518d9f4de282b37d3c4b03084f",
 							"productIndex": "1"
 						},
 						{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682170.fid",
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683812.fid",
 							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=618346ab18b846a1aba1b329650b1c3f&productIndex=1",
 							"productUuid": "618346ab18b846a1aba1b329650b1c3f",
 							"productIndex": "1"
 						},
 						{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682171.fid",
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683813.fid",
 							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=9215640e787c4575be90fe7758ba7c3f&productIndex=1",
 							"productUuid": "9215640e787c4575be90fe7758ba7c3f",
 							"productIndex": "1"
 						},
 						{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682172.fid",
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683814.fid",
 							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=3bee7277bdc14a9fbb948424c884ca96&productIndex=1",
 							"productUuid": "3bee7277bdc14a9fbb948424c884ca96",
 							"productIndex": "1"
 						},
 						{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682173.fid",
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683815.fid",
 							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=ae3c681efd574d508756af9b95c04f51&productIndex=1",
 							"productUuid": "ae3c681efd574d508756af9b95c04f51",
 							"productIndex": "1"
 						},
 						{
-							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/682/0000682174.fid",
+							"imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683816.fid",
 							"link": "http://m.ejomoo.com/h5/templet/detail/b2b-details.html?productUuid=1390c9ad11c340abaf0056b0cf934788&productIndex=1",
 							"productUuid": "1390c9ad11c340abaf0056b0cf934788",
 							"productIndex": "1"
