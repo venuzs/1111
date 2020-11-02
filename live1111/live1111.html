@@ -211,7 +211,34 @@
 			color: #fff;
 		}
 
-
+    .countDown{
+			position: relative;
+		}
+		.countDown .dates{
+			position: absolute;
+			top: 0.88rem;
+			right: 0rem;
+			display: flex;
+			font-size: 0.6rem;
+			color: #E8C49E;
+		}
+		.countDown .dates .day{
+			position: absolute;
+			right: 6.73rem;
+		}
+		.countDown .dates .hour{
+			position: absolute;
+			right: 5.03rem;
+		}
+		.countDown .dates .branch{
+			position: absolute;
+			right: 3.35rem;
+		}
+		.countDown .dates .second{
+			position: absolute;
+			right: 1.7rem;
+		}
+		 
 		.video-wrapper{
 			position: relative;
 		}
@@ -352,6 +379,15 @@
 			<!--	</div>-->
 			<div class="contentbox">
 				<component-carousel></component-carousel>
+				<div class="countDown">
+					<img :src="countDown">
+					<div class="dates" v-if="showDay">
+						<div class="day" v-if="day">{{day}}</div>
+						<div class="hour" v-if="hour">{{hour}}</div>
+						<div class="branch" v-if="branch">{{branch}}</div>
+						<div class="second" v-if="second">{{second}}</div>
+					</div>
+				</div>
 				<div><img :src="newyImg" alt=""></div>
 				<div class="coupontit" :id="coupontit.id">
 					<div class="coupontititem" v-for="(item,index) in coupontit.list">
@@ -763,6 +799,13 @@
 				pageFlag: false,
 				isvcodeLive: false,
 				waiterAlary: false,
+				countDown: "http://img.jomoo.com.cn//dev1/0/000/687/0000687039.fid",
+				day: "", //倒计时天数
+				hour: "", // 小时
+				branch: "", //分钟
+				second: "", //秒
+				activitydjs: "",
+				showDay:false,
 				nav: [{
 						target: "cztc"
 					},
@@ -872,8 +915,8 @@
 				join: {
 					title: 'http://img.jomoo.com.cn/dev1/0/000/683/0000683761.fid',
 					qrcode: 'http://img.jomoo.com.cn/dev1/0/000/683/0000683762.fid',
-					imgurl:"http://m.ejomoo.com/h5/templet/pt/details.html?pt=promotion5000000015",
-					
+					imgurl: "http://m.ejomoo.com/h5/templet/pt/details.html?pt=promotion5000000015",
+
 				},
 				nav: [{
 						url: "http://img.jomoo.com.cn/dev1/0/000/677/0000677126.fid",
@@ -1302,6 +1345,60 @@
 						window.location.href = 'http://m.ejomoo.com/h5/templet/category/category.html';
 					}
 				},
+				/**
+				 * 格式化秒
+				 * @param int  value 总秒数
+				 * @return string result 格式化后的字符串
+				 */
+				formatSeconds(value) {
+					if (value > 0) {
+						var theTime = parseInt(value); // 需要转换的时间秒
+						var theTime1 = 0; // 分
+						var theTime2 = 0; // 小时
+						var theTime3 = 0; // 天
+						if (theTime > 60) {
+							theTime1 = parseInt(theTime / 60);
+							theTime = parseInt(theTime % 60);
+							if (theTime1 > 60) {
+								theTime2 = parseInt(theTime1 / 60);
+								theTime1 = parseInt(theTime1 % 60);
+								if (theTime2 > 24) {
+									//大于24小时
+									theTime3 = parseInt(theTime2 / 24);
+									theTime2 = parseInt(theTime2 % 24);
+								}
+							}
+						}
+						var result = '';
+						if (theTime > 0) {
+							let m = theTime < 10 ? '0' + theTime : theTime;
+							result = " " + m + " 秒 ";
+							this.second = m;
+						} else {
+							this.second = '00';
+							result = " " + "00" + " 秒 ";
+						}
+						if (theTime1 > 0) {
+							let f = theTime1 < 10 ? '0' + theTime1 : theTime1;
+							this.branch = f;
+							result = " " + f + "分 " + result;
+						}
+						if (theTime2 > 0) {
+							let s = theTime2 < 10 ? '0' + theTime2 : theTime2;
+							this.hour = s;
+							result = " " + s + "小时 " + result;
+						}
+						if (theTime3 > 0) {
+							let t = theTime3 < 10 ? '0' + theTime3 : theTime3;
+							this.day = t;
+							result = " " + t + " 天 " + result;
+						}
+						return result;
+					} else {
+						//活动时间到了
+						return false
+					}
+				},
 				shopcartClickEvent() {
 					if (this.isMini) {
 						wx.miniProgram.switchTab({
@@ -1404,9 +1501,10 @@
 					autoplay: 3000,
 					loop: false, // 循环模式选项
 				})
-				setTimeout(function () {
+				setTimeout(function() {
 					that.waiterAlary = true
-				},300)
+					that.showDay = true
+				}, 300)
 				document.addEventListener("WeixinJSBridgeReady", function() {
 					document.getElementById('video').play();
 				}, false);
@@ -1418,6 +1516,13 @@
 				$('.live-room, .live-float').on('click', () => {
 					this.isvcodeLive = true;
 				});
+				this.timer = setInterval(() => {
+					var currenttime = new Date().getTime();
+					var realEndTime = '2020/11/11 20:00:00';
+					realEndTime = new Date(realEndTime).getTime()
+					var millisecond = Math.floor((realEndTime - currenttime) / 1000);
+					this.activitydjs = this.formatSeconds(millisecond);
+				}, 1000);
 			}
 		})
 	</script>
