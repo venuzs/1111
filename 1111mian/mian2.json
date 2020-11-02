@@ -11,17 +11,17 @@
  "coupontit": [{
      "imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683753.fid",
      "uuid": "",
-     "link": "/pages/shop/detailsCoupon?productUuid=31bd1107ca824aafb150be6056290d6d&productIndex=10"
+     "link": "/pages/shop/detailsCoupon?productUuid=37f1145a20cf42fdb25319485e2b9b24&productIndex=10"
    },
    {
      "imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683754.fid",
      "uuid": "",
-     "link": "/pages/shop/detailsCoupon?productUuid=b44fa6ac913f4d01a2a1b74b6fa152af&productIndex=10"
+     "link": "/pages/shop/detailsCoupon?productUuid=0838226f3abb4815a0b435b28e250ee5&productIndex=10"
    },
 	 {
 	   "imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683755.fid",
 	   "uuid": "",
-	   "link": "/pages/shop/detailsCoupon?productUuid=d85a036252d84aa4b1336968cd80a5d6&productIndex=10"
+	   "link": "/pages/shop/detailsCoupon?productUuid=c4474f4c72964dbea41923553d312d8d&productIndex=10"
 	 }
  ],
  "zerotitImg": "http://img.jomoo.com.cn/dev1/0/000/683/0000683756.fid",
@@ -76,15 +76,15 @@
  "oneginauto": "http://img.jomoo.com.cn/dev1/0/000/677/0000677151.fid",
  "showproduct": [{
      "imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683765.fid",
-     "link": "/pages/shop/detailsCoupon?productUuid=3422bd8013e1482aa2a10e16153f9020&productIndex=10"
+     "link": "/pages/shop/detailsCoupon?productUuid=8d5539aa7a534e9bb3abf7819ae617d8&productIndex=10"
    },
    {
      "imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683766.fid",
-     "link": "/pages/shop/detailsCoupon?productUuid=d46f682f02c4460b9e7f630df63fa7cd&productIndex=10"
+     "link": "/pages/shop/detailsCoupon?productUuid=6853d5f24a934cb785cab03f3d20381d&productIndex=10"
    },
    {
      "imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683767.fid",
-     "link": "/pages/shop/detailsCoupon?productUuid=4c8d110ebe6345d7b39e195c132d00da&productIndex=10"
+     "link": "/pages/shop/detailsCoupon?productUuid=536fbfa3fab840819594b76d0b223566&productIndex=10"
    }
  ],
  "screamtit": "http://img.jomoo.com.cn/dev1/0/000/683/0000683763.fid",
