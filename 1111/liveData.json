@@ -19,7 +19,7 @@
   "libmBtnEnd": "http://img.jomoo.com.cn/dev1/0/000/677/0000677119.fid",
   "bkdpListObj": {
     "title": "http://img.jomoo.com.cn/dev1/0/000/681/0000681033.fid",
-    "timerLine": "http://img.jomoo.com.cn/dev1/0/000/677/0000677994.fid"
+    "timerLine": "http://img.jomoo.com.cn//dev1/0/000/686/0000686638.fid"
   },
   "sckillListObj": {
     "title": "http://img.jomoo.com.cn/dev1/0/000/681/0000681034.fid"
@@ -33,21 +33,21 @@
       "type": "满减券",
       "money": "50",
       "rule": "单笔订单满2999使用",
-      "uuid": "9224328dcf7b484b93ae18dd0fd9c709",
-      "link": "/pages/shop/detailsCoupon?productUuid=31bd1107ca824aafb150be6056290d6d&productIndex=10"
+      "uuid": "37f1145a20cf42fdb25319485e2b9b24",
+      "link": "/pages/shop/detailsCoupon?productUuid=37f1145a20cf42fdb25319485e2b9b24&productIndex=10"
     },
     {
       "type": "满减券",
       "money": "100",
       "rule": "单笔订单满4999使用",
-      "uuid": "56e50b764b594c7aa643f65581ea09af",
-      "link": "/pages/shop/detailsCoupon?productUuid=b44fa6ac913f4d01a2a1b74b6fa152af&productIndex=10"
+      "uuid": "0838226f3abb4815a0b435b28e250ee5",
+      "link": "/pages/shop/detailsCoupon?productUuid=0838226f3abb4815a0b435b28e250ee5&productIndex=10"
     },
     {
       "type": "满减券",
       "money": "500",
       "rule": "单笔订单满9999使用",
-      "link": "/pages/shop/detailsCoupon?productUuid=d85a036252d84aa4b1336968cd80a5d6&productIndex=10"
+      "link": "/pages/shop/detailsCoupon?productUuid=c4474f4c72964dbea41923553d312d8d&productIndex=10"
     }
   ],
   "starPro": {
@@ -59,16 +59,16 @@
   },
   "bkdpList": [
     {
-      "banSrc": "http://img.jomoo.com.cn/dev1/0/000/677/0000677095.fid",
-      "link": "/pages/shop/detailsCoupon?productUuid=eab6216070dd48ba8d594e5f710c0ca6&productIndex=10"
+      "banSrc": "http://img.jomoo.com.cn/dev1/0/000/683/0000683420.fid",
+      "link": "/pages/shop/details?productUuid=8d5539aa7a534e9bb3abf7819ae617d8&productIndex=1"
     },
     {
-      "banSrc": "http://img.jomoo.com.cn/dev1/0/000/677/0000677114.fid",
-      "link": "/pages/shop/detailsCoupon?productUuid=32ccbef8a63741e9b8d860cc0a3c421a&productIndex=10"
+      "banSrc": "http://img.jomoo.com.cn/dev1/0/000/683/0000683421.fid",
+      "link": "/pages/shop/details?productUuid=6853d5f24a934cb785cab03f3d20381d&productIndex=1"
     },
     {
-      "banSrc": "http://img.jomoo.com.cn/dev1/0/000/677/0000677675.fid",
-      "link": "/pages/shop/detailsCoupon?productUuid=a7cd7ebf459c4b81ad02cef4c153c4b3&productIndex=10"
+      "banSrc": "http://img.jomoo.com.cn/dev1/0/000/683/0000683450.fid",
+      "link": "/pages/shop/details?productUuid=536fbfa3fab840819594b76d0b223566&productIndex=1"
     }
   ],
   "sckillList": [
