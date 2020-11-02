@@ -220,7 +220,12 @@
 			right: 0rem;
 			display: flex;
 			font-size: 0.6rem;
-			color: #E8C49E;
+			color: #f7840c;
+			font-weight: bold;
+			display: none;
+		}
+		.countDown .dates.show-dates {
+			display: block;
 		}
 		.countDown .dates .day{
 			position: absolute;
@@ -381,7 +386,7 @@
 				<component-carousel></component-carousel>
 				<div class="countDown">
 					<img :src="countDown">
-					<div class="dates" v-if="showDay">
+					<div class="dates" :class="showDay?'show-dates':''">
 						<div class="day" v-if="day">{{day}}</div>
 						<div class="hour" v-if="hour">{{hour}}</div>
 						<div class="branch" v-if="branch">{{branch}}</div>
