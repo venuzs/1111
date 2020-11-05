@@ -29,12 +29,12 @@
     {
       "imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683757.fid",
       "link": "/pages/shop/detailsSeckill?skuNo=931908-27Z-1&activityUuid=892397cbf967498384dd2ef165ca08f7&productIndex=2",
-      "isOver":false
+      "isOver":true
     },
     {
       "imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683758.fid",
       "link": "/pages/shop/detailsSeckill?skuNo=2223-505/1B-Z&activityUuid=895a784acbad4f59911b04bcaec2655b&productIndex=2",
-      "isOver":false
+      "isOver":true
     },
 		{
 		  "imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683759.fid",
