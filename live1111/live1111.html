@@ -229,19 +229,27 @@
 		}
 		.countDown .dates .day{
 			position: absolute;
-			right: 6.73rem;
+			right: calc(311rem / 46.875);
+			width: calc(42rem / 46.875);
+			text-align: center;
 		}
 		.countDown .dates .hour{
 			position: absolute;
-			right: 5.03rem;
+			right: calc(232rem / 46.875);
+			width: calc(42rem / 46.875);
+			text-align: center;
 		}
 		.countDown .dates .branch{
 			position: absolute;
-			right: 3.35rem;
+			right: calc(153rem / 46.875);
+			width: calc(42rem / 46.875);
+			text-align: center;
 		}
 		.countDown .dates .second{
 			position: absolute;
-			right: 1.7rem;
+			right: calc(76rem / 46.875);
+			width: calc(42rem / 46.875);
+			text-align: center;
 		}
 		 
 		.video-wrapper{
@@ -805,10 +813,10 @@
 				isvcodeLive: false,
 				waiterAlary: false,
 				countDown: "http://img.jomoo.com.cn//dev1/0/000/687/0000687039.fid",
-				day: "", //倒计时天数
-				hour: "", // 小时
-				branch: "", //分钟
-				second: "", //秒
+				day: "0", //倒计时天数
+				hour: "00", // 小时
+				branch: "00", //分钟
+				second: "00", //秒
 				activitydjs: "",
 				showDay:false,
 				nav: [{
@@ -1523,7 +1531,7 @@
 				});
 				this.timer = setInterval(() => {
 					var currenttime = new Date().getTime();
-					var realEndTime = '2020/11/11 20:00:00';
+					var realEndTime = '2020/11/5 19:59:00';
 					realEndTime = new Date(realEndTime).getTime()
 					var millisecond = Math.floor((realEndTime - currenttime) / 1000);
 					this.activitydjs = this.formatSeconds(millisecond);
