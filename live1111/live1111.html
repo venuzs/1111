@@ -223,25 +223,30 @@
 			color: #f7840c;
 			font-weight: bold;
 			display: none;
+			text-align: center;
 		}
 		.countDown .dates.show-dates {
 			display: block;
 		}
 		.countDown .dates .day{
 			position: absolute;
-			right: 6.73rem;
+			right: calc(311rem / 46.875);
+			width: calc(42rem / 46.875);
 		}
 		.countDown .dates .hour{
 			position: absolute;
-			right: 5.03rem;
+			right: calc(232rem / 46.875);
+			width: calc(42rem / 46.875);
 		}
 		.countDown .dates .branch{
 			position: absolute;
-			right: 3.35rem;
+			right: calc(153rem / 46.875);
+			width: calc(42rem / 46.875);
 		}
 		.countDown .dates .second{
 			position: absolute;
-			right: 1.7rem;
+			right: calc(76rem / 46.875);
+			width: calc(42rem / 46.875);
 		}
 		 
 		.video-wrapper{
@@ -805,10 +810,10 @@
 				isvcodeLive: false,
 				waiterAlary: false,
 				countDown: "http://img.jomoo.com.cn//dev1/0/000/687/0000687039.fid",
-				day: "", //倒计时天数
-				hour: "", // 小时
-				branch: "", //分钟
-				second: "", //秒
+				day: "0", //倒计时天数
+				hour: "00", // 小时
+				branch: "00", //分钟
+				second: "00", //秒
 				activitydjs: "",
 				showDay:false,
 				nav: [{
