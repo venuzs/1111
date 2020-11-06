@@ -1,11 +1,11 @@
 {
-  "room": 136,
-  "yyroom": 136,
+  "room": 143,
+  "yyroom": 143,
   "mainEnterImg": "http://img.jomoo.com.cn/dev1/0/000/677/0000677687.fid",
-  "liveingImg": "http://img.jomoo.com.cn/dev1/0/000/625/0000625286.fid",
+  "liveingImg": "http://img.jomoo.com.cn//dev1/0/000/689/0000689824.fid",
   "liveEdImg": "http://img.jomoo.com.cn/dev1/0/000/622/0000622001.fid",
   "showSeeBack": false,
-  "fissionLive": false,
+  "fissionLive": true,
   "banner": "http://img.jomoo.com.cn/dev1/0/000/681/0000681031.fid",
   "livead1": "",
   "livead1Link": "",
@@ -59,16 +59,16 @@
   },
   "bkdpList": [
     {
-      "banSrc": "http://img.jomoo.com.cn/dev1/0/000/683/0000683420.fid",
-      "link": "/pages/shop/details?productUuid=8d5539aa7a534e9bb3abf7819ae617d8&productIndex=1"
+      "banSrc": "http://img.jomoo.com.cn//dev1/0/000/689/0000689190.fid",
+      "link": "/pages/shop/details?productUuid=3422bd8013e1482aa2a10e16153f9020&productIndex=1"
     },
     {
       "banSrc": "http://img.jomoo.com.cn/dev1/0/000/683/0000683421.fid",
-      "link": "/pages/shop/details?productUuid=6853d5f24a934cb785cab03f3d20381d&productIndex=1"
+      "link": "/pages/shop/details?productUuid=d46f682f02c4460b9e7f630df63fa7cd&productIndex=1"
     },
     {
-      "banSrc": "http://img.jomoo.com.cn/dev1/0/000/683/0000683450.fid",
-      "link": "/pages/shop/details?productUuid=536fbfa3fab840819594b76d0b223566&productIndex=1"
+      "banSrc": "http://img.jomoo.com.cn//dev1/0/000/689/0000689191.fid",
+      "link": "/pages/shop/details?productUuid=3e1d50280f6645e1ad2985671d20f21c&productIndex=1"
     }
   ],
   "sckillList": [
@@ -83,12 +83,12 @@
       "link": "/pages/shop/detailsSeckill?skuNo=S177013-2B01-1&activityUuid=a6398294f4604021a97ada4811fcbfe8&productIndex=2"
     },{
       "imgUrl": "http://img.jomoo.com.cn/dev1/0/000/681/0000681028.fid",
-      "isOver": false,
+      "isOver": true,
       "link": "/pages/shop/detailsSeckill?skuNo=931908-27Z-1&activityUuid=892397cbf967498384dd2ef165ca08f7&productIndex=2"
     },
     {
       "imgUrl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677998.fid",
-      "isOver": false,
+      "isOver": true,
       "link": "/pages/shop/detailsSeckill?skuNo=33139-050/1B-Z&activityUuid=892397cbf967498384dd2ef165ca08f7&productIndex=2"
     },
     {
