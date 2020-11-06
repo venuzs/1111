@@ -1,7 +1,7 @@
 {
-  "liveRoom": 136,
-  "showLiveEnter": false,
-  "liveingImg": "",
+  "liveRoom": 143,
+  "showLiveEnter": true,
+  "liveingImg": "http://img.jomoo.com.cn//dev1/0/000/689/0000689824.fid",
   "liveEdImg": "http://img.jomoo.com.cn/dev1/0/000/622/0000622001.fid",
   "showSeeBack": false,
  "banner": [{ 
@@ -75,7 +75,7 @@
  "sutogisImg": "http://img.jomoo.com.cn/dev1/0/000/677/0000677154.fid",
  "oneginauto": "http://img.jomoo.com.cn/dev1/0/000/677/0000677151.fid",
  "showproduct": [{
-     "imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683765.fid",
+     "imgurl": "http://img.jomoo.com.cn//dev1/0/000/689/0000689194.fid",
      "link": "/pages/shop/detailsCoupon?productUuid=8d5539aa7a534e9bb3abf7819ae617d8&productIndex=10"
    },
    {
@@ -83,7 +83,7 @@
      "link": "/pages/shop/detailsCoupon?productUuid=6853d5f24a934cb785cab03f3d20381d&productIndex=10"
    },
    {
-     "imgurl": "http://img.jomoo.com.cn/dev1/0/000/683/0000683767.fid",
+     "imgurl": "http://img.jomoo.com.cn//dev1/0/000/689/0000689193.fid",
      "link": "/pages/shop/detailsCoupon?productUuid=536fbfa3fab840819594b76d0b223566&productIndex=10"
    }
  ],

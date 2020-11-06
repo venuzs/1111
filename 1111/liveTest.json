@@ -1,8 +1,8 @@
 {
-  "room": 136,
-  "yyroom": 136,
+  "room": 143,
+  "yyroom": 143,
   "mainEnterImg": "http://img.jomoo.com.cn/dev1/0/000/677/0000677687.fid",
-  "liveingImg": "http://img.jomoo.com.cn/dev1/0/000/625/0000625286.fid",
+  "liveingImg": "http://img.jomoo.com.cn//dev1/0/000/689/0000689824.fid",
   "liveEdImg": "http://img.jomoo.com.cn/dev1/0/000/622/0000622001.fid",
   "showSeeBack": false,
   "fissionLive": false,
@@ -59,7 +59,7 @@
   },
   "bkdpList": [
     {
-      "banSrc": "http://img.jomoo.com.cn/dev1/0/000/683/0000683420.fid",
+      "banSrc": "http://img.jomoo.com.cn//dev1/0/000/689/0000689190.fid",
       "link": "/pages/shop/details?productUuid=8d5539aa7a534e9bb3abf7819ae617d8&productIndex=1"
     },
     {
@@ -67,7 +67,7 @@
       "link": "/pages/shop/details?productUuid=6853d5f24a934cb785cab03f3d20381d&productIndex=1"
     },
     {
-      "banSrc": "http://img.jomoo.com.cn/dev1/0/000/683/0000683450.fid",
+      "banSrc": "http://img.jomoo.com.cn//dev1/0/000/689/0000689191.fid",
       "link": "/pages/shop/details?productUuid=536fbfa3fab840819594b76d0b223566&productIndex=1"
     }
   ],
