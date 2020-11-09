@@ -60,15 +60,15 @@
   "bkdpList": [
     {
       "banSrc": "http://img.jomoo.com.cn//dev1/0/000/689/0000689190.fid",
-      "link": "/pages/shop/details?productUuid=8d5539aa7a534e9bb3abf7819ae617d8&productIndex=1"
+      "link": "/pages/shop/details?productUuid=3422bd8013e1482aa2a10e16153f9020&productIndex=1"
     },
     {
       "banSrc": "http://img.jomoo.com.cn/dev1/0/000/683/0000683421.fid",
-      "link": "/pages/shop/details?productUuid=6853d5f24a934cb785cab03f3d20381d&productIndex=1"
+      "link": "/pages/shop/details?productUuid=d46f682f02c4460b9e7f630df63fa7cd&productIndex=1"
     },
     {
       "banSrc": "http://img.jomoo.com.cn//dev1/0/000/689/0000689191.fid",
-      "link": "/pages/shop/details?productUuid=536fbfa3fab840819594b76d0b223566&productIndex=1"
+      "link": "/pages/shop/details?productUuid=3e1d50280f6645e1ad2985671d20f21c&productIndex=1"
     }
   ],
   "sckillList": [
@@ -93,12 +93,12 @@
     },
     {
       "imgUrl": "http://img.jomoo.com.cn/dev1/0/000/681/0000681029.fid",
-      "isOver": false,
+      "isOver": true,
       "link": "/pages/shop/detailsSeckill?skuNo=931909-27Z-1&activityUuid=e4d31b34e99c44ada387a00b006288d4&productIndex=2"
     },
     {
       "imgUrl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677400.fid",
-      "isOver": false,
+      "isOver": true,
       "link": "/pages/shop/detailsSeckill?skuNo=92102-8C-1&activityUuid=e4d31b34e99c44ada387a00b006288d4&productIndex=2"
     },{
       "imgUrl": "http://img.jomoo.com.cn/dev1/0/000/677/0000677401.fid",
