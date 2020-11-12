@@ -1,6 +1,6 @@
 {
   "liveRoom": 143,
-  "showLiveEnter": true,
+  "showLiveEnter": false,
   "liveingImg": "http://img.jomoo.com.cn//dev1/0/000/689/0000689824.fid",
   "liveEdImg": "http://img.jomoo.com.cn/dev1/0/000/622/0000622001.fid",
   "showSeeBack": false,
